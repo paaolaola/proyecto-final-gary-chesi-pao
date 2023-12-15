@@ -7,14 +7,26 @@ import Footer from "./components/Footer";
 
 /*falta agregar el provider*/
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Navbar />
-            <Buscador />
-            <Router />
-            <Footer />
-        </BrowserRouter>
-    );
+	return (
+		<BrowserRouter>
+			<div className="grid-content">
+				<div className="buscador-content">
+					<Buscador />
+				</div>
+
+				<div className="barra-lateral">
+					<Navbar />
+				</div>
+
+				<div className="main-content">
+					<Router />
+				</div>
+				<div className="footer-content">
+					<Footer />
+				</div>
+			</div>
+		</BrowserRouter>
+	);
 };
 
 export default App;
