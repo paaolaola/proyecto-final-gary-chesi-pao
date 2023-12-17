@@ -1,4 +1,4 @@
-import "./assets/css/App.css";
+import "./assets/scss/App.scss";
 import { BrowserRouter } from "react-router-dom";
 import Router from "./router/Router";
 import Navbar from "./components/Navbar";
@@ -7,26 +7,26 @@ import Footer from "./components/Footer";
 
 /*falta agregar el provider*/
 const App = () => {
-	return (
-		<BrowserRouter>
-			<div className="grid-content">
-				<div className="buscador-content">
-					<Buscador />
-				</div>
+    return (
+        <BrowserRouter>
+            <div className="grid-content">
+                <div className="buscador-content">
+                    <Buscador />
+                </div>
 
-				<div className="barra-lateral">
-					<Navbar />
-				</div>
+                <div className="barra-lateral">
+                    <Navbar />
+                </div>
 
-				<div className="main-content">
-					<Router />
-				</div>
-				<div className="footer-content">
-					<Footer />
-				</div>
-			</div>
-		</BrowserRouter>
-	);
+                <div className="main-content">
+                    <Router />
+                </div>
+                <div className="footer-content">
+                    <Footer />
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 };
 
 export default App;
