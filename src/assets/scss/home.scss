@@ -1,14 +1,20 @@
 .contenedor-home {
-    background-color: var(--color-cuarto);
-    color: var(--color-sexto);
-    padding: 1rem 2rem;
-    height: 100%;
-    text-align: center;
+	padding: 1rem;
+	text-align: justify;
+	border: 1px solid var(--color-tercero);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--color-tercero);
 }
 .titulo-home {
-    background-color: var(--color-cuarto);
-    color: var(--color-sexto);
-    padding-top: 4rem;
-    font-weight: 200;
-    text-align: center;
+	color: white;
+	font-size: 1rem;
+	text-align: center;
+}
+.fondo-home {
+	background-image: url(https://blog.aconcaguafoods.cl/hs-fs/hubfs/shutterstock_760421329.png?width=1920&name=shutterstock_760421329.png);
+	background-size: cover;
+	background-position: 50% 70%;
+	padding: 5rem 10rem;
+	min-height: 90vh;
 }
