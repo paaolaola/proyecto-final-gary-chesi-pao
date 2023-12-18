@@ -4,13 +4,13 @@ const Home = () => {
 	return (
 		<>
 			<div className="fondo-home">
+				{" "}
+				<h1 className="titulo-home">
+					ENCUENTRA TUS RECETAS DE COCINA PARA PREPARAR TUS COMIDAS
+					FAVORITAS
+				</h1>
 				<div className="contenedor-home">
-					<div>
-						<h1 className="titulo-home">
-							ENCUENTRA TUS RECETAS DE COCINA PARA PREPARAR TUS
-							COMIDAS FAVORITAS
-						</h1>
-					</div>
+					<div></div>
 					<Galeria />
 				</div>
 			</div>
