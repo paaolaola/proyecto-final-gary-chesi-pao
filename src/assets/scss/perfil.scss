@@ -1,0 +1,44 @@
+.profile-main {
+  display: grid;
+  min-height: 50vh;
+  margin-top: 2rem;
+  grid-template-areas:
+    " img desc"
+    "favorites tus-recetas";
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  grid-area: img;
+  max-width: 20rem;
+}
+
+.profile-img-cont {
+  text-align: center;
+}
+
+.profile-desc {
+  grid-area: desc;
+}
+
+.profile-desc h2 {
+  margin: 1rem 0;
+}
+
+.profile-favorites-cont {
+  display: flex;
+  margin: 3rem;
+}
+
+.profile-mis-recetas-cont {
+  display: flex;
+  margin: 3rem;
+}
+
+.profile-main {
+  .nombre-ayuda,
+  p {
+    text-align: center;
+  }
+}
