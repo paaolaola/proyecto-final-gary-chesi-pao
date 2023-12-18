@@ -1,112 +1,112 @@
 .galeria {
-	border-radius: 15px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	width: 100%;
-	justify-content: space-around;
-	gap: 20px;
-	width: 100%;
-	margin: 10px auto;
-	padding: 10px auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px auto;
 
-	@media (max-width: 1200px) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	@media (max-width: 1000px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-	@media (max-width: 700px) {
-		grid-template-columns: repeat(1, 1fr);
-	}
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .galeria-container {
-	padding: 0;
+    padding: 0;
 }
 
 .contenedor-card {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-	border-radius: 15px;
-	width: 200px;
-	margin: 10px;
-	overflow: hidden;
-	text-align: center;
-	transition: all 0.3s;
-	&:hover {
-		transform: scale(1.02);
-		box-shadow: rgba(99, 99, 99, 0.2) 0px 8px;
-	}
+    border-radius: 15px;
+    width: 200px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 8px;
+    }
 }
 
 .contenedor-card:hover .imagen-card {
-	filter: brightness(70%);
+    filter: brightness(70%);
 }
 
 .contenedor-card:hover .caja,
 .contenedor-card:hover .btn-caja {
-	opacity: 1;
+    opacity: 1;
 }
 
 .caja,
 .btn-caja {
-	position: absolute;
-	opacity: 0;
-	transition: opacity 0.3s ease;
-	z-index: 2;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
 }
 
 .caja {
-	bottom: 50%;
-	left: 50%;
-	transform: translate(-50%, 50%);
-	padding-bottom: 1rem;
-	font-weight: 400;
-	color: var(--color-sexto);
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding-bottom: 1rem;
+    font-weight: 400;
+    color: var(--color-sexto);
 }
 
 .titulo-caja {
-	font-size: 1rem;
-	font-weight: 500;
-	margin-bottom: 1.5rem;
-	color: var(--color-tercero);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--color-tercero);
 }
 
 .btn-caja {
-	background-color: transparent;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100px;
-	color: var(--color-tercero);
-	font-family: "Work Sans", sans-serif;
-	font-weight: 400;
-	padding: 5px 20px;
-	border: 2px solid var(--color-tercero);
-	border-radius: 6px;
-	cursor: pointer;
+    background-color: transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    color: var(--color-tercero);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    padding: 5px 20px;
+    border: 2px solid var(--color-tercero);
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .imagen-card {
-	display: block;
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 
-	cursor: pointer;
-	transition: opacity 0.3s ease;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 .iconos {
-	width: 100%;
-	background-color: var(--color-sexto);
-	padding: 0.5rem;
+    width: 100%;
+    background-color: var(--color-sexto);
+    padding: 0.5rem;
 }
 .iconos-card {
-	background-color: var(--color-sexto);
-	border-style: none;
-	cursor: pointer;
+    background-color: var(--color-sexto);
+    border-style: none;
+    cursor: pointer;
 }
