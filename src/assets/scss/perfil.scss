@@ -1,44 +1,58 @@
 .profile-main {
-  display: grid;
-  min-height: 50vh;
-  margin-top: 2rem;
-  grid-template-areas:
-    " img desc"
-    "favorites tus-recetas";
-  align-items: center;
-  justify-content: center;
+	display: grid;
+	min-height: 50vh;
+	margin-top: 2rem;
+	grid-template-areas:
+		" img desc"
+		"favorites tus-recetas";
+	align-items: center;
+	justify-content: center;
+}
+.contenedor-perfil {
+	background-image: url(img/pexels-1.jpg);
+	background-size: cover;
+	background-position: 50% 70%;
+	padding: 2rem;
+}
+.seccion-perfil {
+	padding: 10px;
+	text-align: justify;
+	border: 1px solid var(--color-tercero);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--color-tercero);
 }
 
 .profile-img {
-  grid-area: img;
-  max-width: 20rem;
+	grid-area: img;
+	max-width: 20rem;
 }
 
 .profile-img-cont {
-  text-align: center;
+	text-align: center;
 }
 
 .profile-desc {
-  grid-area: desc;
+	grid-area: desc;
 }
 
 .profile-desc h2 {
-  margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .profile-favorites-cont {
-  display: flex;
-  margin: 3rem;
+	display: flex;
+	margin: 3rem;
 }
 
 .profile-mis-recetas-cont {
-  display: flex;
-  margin: 3rem;
+	display: flex;
+	margin: 3rem;
 }
 
 .profile-main {
-  .nombre-ayuda,
-  p {
-    text-align: center;
-  }
+	.nombre-ayuda,
+	p {
+		text-align: center;
+	}
 }
