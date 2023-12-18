@@ -1,9 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 
 const RecetasFavoritas = () => {
+    const navigate = useNavigate();
+
+    const irAtras = (e) => {
+        e.preventDefault();
+        navigate(-1);
+    };
     return (
         <div className="fondo-favoritas">
+            <button className="btn-global" onClick={(e) => irAtras(e)}>
+                Volver atrás
+            </button>
+
             <div className="contenedor-home">
                 <div>
                     <h1 className="titulo-favoritas">Tus Recetas Favoritas</h1>

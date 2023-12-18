@@ -6,6 +6,7 @@
     background-position: 50% 50%;
     min-height: 90vh;
     padding: 4rem 10rem;
+    text-align: right;
 }
 .titulo-receta {
     color: var(--color-tercero);
@@ -15,11 +16,10 @@
 }
 .recipe-form {
     text-align: justify;
-    border: 1px solid white;
+    border: 1px solid var(--color-tercero);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 2rem 5rem;
@@ -45,7 +45,7 @@
 
         &:focus {
             outline: none;
-            border-color: var(--color-primero); // Color al enfocar
+            border-color: var(--color-primero);
         }
     }
 
@@ -58,15 +58,15 @@
         cursor: pointer;
         font-size: 18px;
         transition: background-color 0.3s;
-        width: 30%;
+        max-width: 200px;
         margin: auto;
 
         &:hover {
-            background-color: var(--color-quinto); // Color al pasar el mouse
+            background-color: var(--color-quinto);
         }
         &:active {
-            transform: scale(0.98); // Reducción de escala al hacer clic
-            box-shadow: none; // Elimina la sombra al hacer clic
+            transform: scale(0.98);
+            box-shadow: none;
         }
     }
 }

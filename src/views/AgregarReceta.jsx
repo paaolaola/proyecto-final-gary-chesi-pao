@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AgregarReceta = () => {
     const [recipe, setRecipe] = useState({
@@ -21,6 +22,9 @@ const AgregarReceta = () => {
 
     return (
         <div className="back-form">
+            <Link to="/">
+                <button className="btn-global">Volver al home</button>
+            </Link>
             <form className="recipe-form" onSubmit={handleSubmit}>
                 <h1 className="titulo-receta">Agrega Tu Receta</h1>
                 <label htmlFor="name">Nombre:</label>
