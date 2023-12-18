@@ -28,7 +28,7 @@ const Card = () => {
                     <BookmarkBorderIcon
                         sx={{
                             fontSize: 30,
-                            color: "white",
+                            color: "#ffe8d6",
                             margin: "0 1rem",
                         }}
                     />
@@ -37,7 +37,7 @@ const Card = () => {
                     <IosShareIcon
                         sx={{
                             fontSize: 30,
-                            color: "white",
+                            color: "#ffe8d6",
                             margin: "0 1rem",
                         }}
                     />
@@ -46,7 +46,7 @@ const Card = () => {
                     <ChatBubbleOutlineIcon
                         sx={{
                             fontSize: 28,
-                            color: "white",
+                            color: "#ffe8d6",
                             margin: "0 1rem",
                         }}
                     />
