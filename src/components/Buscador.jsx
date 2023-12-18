@@ -5,7 +5,7 @@ const Buscador = () => {
         <div className="contenedor-busq">
             <form className="form-busq">
                 <input type="search" placeholder="BUSCA RECETAS O INGREDIENTES"></input>
-                <button className="btn-busq">Enviar</button>
+                <button className="btn-busq">Buscar</button>
             </form>
             <div>
                 <NavLink to="/perfil">
