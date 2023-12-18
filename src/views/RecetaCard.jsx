@@ -1,4 +1,4 @@
-import "../assets/css/RecetaCard.css";
+/* import "../assets/css/RecetaCard.css"; */
 
 const RecetaCard = () => {
   return (

@@ -1,4 +1,4 @@
-import "../assets/css/Perfil.css";
+/* import "../assets/css/Perfil.css"; */
 import "../components/Card";
 import Card from "../components/Card";
 import "../views/Home";
