@@ -12,8 +12,24 @@
     background-position: 50% 70%;
     padding: 5rem 10rem;
     min-height: 100vh;
+    text-align: right;
 }
 
+.btn-global {
+    background: var(--color-sexto);
+    color: var(--color-tercero);
+    font-weight: 400;
+    border-style: none;
+    border-radius: 10px;
+    width: 120px;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    &:hover {
+        background: var(--color-quinto);
+    }
+}
 .titulo-favoritas {
     text-align: center;
     padding: 3rem;
@@ -22,7 +38,7 @@
 .texto-favoritas {
     color: var(--color-tercero);
     text-align: justify;
-    padding: 2rem;
+    padding: 2rem 0 3rem 0;
 }
 
 .imagen-favoritas {

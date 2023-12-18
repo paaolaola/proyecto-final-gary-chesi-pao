@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MisRecetas = () => {
     const recipes = [
         {
@@ -15,6 +17,9 @@ const MisRecetas = () => {
     return (
         <>
             <div className="back-form-2">
+                <Link to="/">
+                    <button className="btn-global">Volver al home</button>
+                </Link>
                 <div className="seccion-receta-2">
                     <h1 className="titulo-receta">Tus Recetas</h1>
                     <div className="recipe-table">

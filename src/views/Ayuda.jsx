@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Ayuda = () => {
     return (
         <main className="contenedor-ayuda ">
+            <Link to="/">
+                <button className="btn-global">Volver al home</button>
+            </Link>
             <div className="seccion-ayuda">
                 <h1 className="titulo-ayuda">Preguntas Frecuentes</h1>
 
