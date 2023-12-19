@@ -1,58 +1,90 @@
 .profile-main {
-	display: grid;
-	min-height: 50vh;
-	margin-top: 2rem;
-	grid-template-areas:
-		" img desc"
-		"favorites tus-recetas";
-	align-items: center;
-	justify-content: center;
+    display: grid;
+    min-height: 50vh;
+    margin-top: 2rem;
+    grid-template-areas:
+        " img desc"
+        "favorites tus-recetas";
+    align-items: center;
+    justify-content: center;
 }
 .contenedor-perfil {
-	background-image: url(img/pexels-1.jpg);
-	background-size: cover;
-	background-position: 50% 70%;
-	padding: 2rem;
+    background-image: url(img/pexels-7.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+    padding: 5rem 10rem;
+    text-align: right;
 }
 .seccion-perfil {
-	padding: 10px;
-	text-align: justify;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: var(--color-tercero);
+    padding: 5rem;
+    text-align: justify;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-tercero);
 }
 
 .profile-img {
-	grid-area: img;
-	max-width: 20rem;
+    grid-area: img;
+    max-width: 25rem;
+    margin: 1rem;
+    padding: 3rem;
 }
 
 .profile-img-cont {
-	text-align: center;
+    text-align: center;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 3rem;
 }
 
 .profile-desc {
-	grid-area: desc;
+    grid-area: desc;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem 2rem 3rem 2rem;
 }
+.btn-mod {
+    text-align: right;
 
+    button {
+        background-color: transparent;
+        color: var(--color-tercero);
+        width: 150px;
+        padding: 0.5rem;
+        border: 2px solid var(--color-tercero);
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
 .profile-desc h2 {
-	margin: 1rem 0;
+    margin: 1rem 0;
 }
-
+.profile-favorites {
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+}
 .profile-favorites-cont {
-	display: flex;
-	margin: 3rem;
+    display: flex;
+    margin: 3rem;
 }
 
+.profile-mis-recetas {
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+}
 .profile-mis-recetas-cont {
-	display: flex;
-	margin: 3rem;
+    display: flex;
+    margin: 3rem;
 }
 
 .profile-main {
-	.nombre-ayuda,
-	p {
-		text-align: center;
-	}
+    .nombre-ayuda,
+    p {
+        text-align: center;
+    }
 }
