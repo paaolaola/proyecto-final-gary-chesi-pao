@@ -9,6 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
 
+  //recordar que este login es estático.
   const loginData = {
     user: "admin",
     password: "admin123",
