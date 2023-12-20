@@ -4,7 +4,6 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { useContext, useState } from "react";
-import GlobalProvider from "../context/GlobalProvider";
 import { GlobalContext } from "../context/GlobalProvider";
 
 const Card = ({ receta }) => {
@@ -41,6 +40,10 @@ const Card = ({ receta }) => {
               /* color: "#ffe8d6", */
               color: isFavorite ? "red" : "#ffe8d6",
               margin: "0 1rem",
+              "&:hover": {
+                color: "pink", // Color cuando el usuario pasa el ratón por encima
+                cursor: "pointer", // Cambia el cursor a pointer para indicar que es clickeable
+              },
             }}
           />
         </button>
