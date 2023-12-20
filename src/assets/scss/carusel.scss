@@ -1,0 +1,27 @@
+/* Agrega estilos CSS específicos para el Carousel en forma de header estirado */
+
+.carousel-header {
+	height: 100px; /* Ajusta la altura según tus necesidades */
+	color: black;
+}
+
+.carousel-header img {
+	object-fit: cover;
+	height: 100px;
+	width: 100%;
+}
+
+.carousel-caption {
+	text-align: center;
+	color: #0a0a0a; /* Color del texto, ajusta según tu diseño */
+}
+
+.carousel-caption h3 {
+	font-size: 2.5rem; /* Tamaño de la fuente del título, ajusta según tu diseño */
+}
+
+.carousel-caption p {
+	font-size: 1.5rem; /* Tamaño de la fuente del párrafo, ajusta según tu diseño */
+}
+
+/* Puedes agregar más estilos según tus necesidades */

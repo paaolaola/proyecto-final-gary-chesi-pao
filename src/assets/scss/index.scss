@@ -13,6 +13,7 @@
 @import "misrecetas.scss";
 @import "perfil.scss";
 @import "recetaCard.scss";
+@import "carusel.scss";
 
 #root {
 	--color-primero: #cb997e;
@@ -33,19 +34,35 @@ a {
 	text-decoration: none;
 	color: var(--color-tercero);
 }
-
 .grid-content {
 	display: grid;
 	grid-template-areas:
+		"barra-lateral carusel"
 		"barra-lateral buscador-content"
 		"barra-lateral main-content"
 		"barra-lateral main-content"
 		"footer-content footer-content";
-	grid-template-rows: auto 1fr 1fr auto;
+	grid-template-rows: auto auto 1fr 1fr auto;
 	grid-template-columns: 120px 1fr;
 	min-height: 100vh;
 	overflow: hidden;
+
+	@media (max-width: 700px) {
+		grid-template-areas:
+			"carusel"
+			"barra-lateral"
+			"buscador-content"
+			"main-content"
+			"footer-content";
+		grid-template-rows: auto auto auto 1fr auto;
+		grid-template-columns: 1fr;
+	}
 }
+
+.carusel {
+	grid-area: carusel;
+}
+
 .buscador-content {
 	grid-area: buscador-content;
 }
@@ -61,5 +78,4 @@ a {
 .footer-content {
 	grid-area: footer-content;
 }
-
 /*RESPONSIVE*/
