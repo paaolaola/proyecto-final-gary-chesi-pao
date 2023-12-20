@@ -1,3 +1,4 @@
+// Navbar.js
 import { NavLink, Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
@@ -9,6 +10,36 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 const Navbar = () => {
 	const ActiveClass = ({ isActive }) =>
 		isActive ? "btn-activo" : "btn-inactivo";
+
+	const links = [
+		{ to: "/", label: "Inicio", icon: <HomeIcon sx={{ fontSize: 40 }} /> },
+		{
+			to: "/favoritas",
+			label: "Favoritas",
+			icon: <BookmarkIcon sx={{ fontSize: 40 }} />,
+		},
+		{
+			to: "/mis-recetas",
+			label: "Mis Recetas",
+			icon: <BlenderIcon sx={{ fontSize: 40 }} />,
+		},
+		{
+			to: "/nueva-receta",
+			label: "Nueva Receta",
+			icon: <AddCircleIcon sx={{ fontSize: 40 }} />,
+		},
+		{
+			to: "/ayuda",
+			label: "Ayuda",
+			icon: <HelpIcon sx={{ fontSize: 40 }} />,
+		},
+		{
+			to: "/login",
+			label: "Login",
+			icon: <ExitToAppIcon sx={{ fontSize: 40 }} />,
+		},
+	];
+
 	return (
 		<nav>
 			<div className="navbar">
@@ -23,50 +54,13 @@ const Navbar = () => {
 					</div>
 				</Link>
 				<ul className="nav-ul">
-					<button className="btn-navbar">
-						<NavLink to="/" className={ActiveClass}>
-							<li>
-								<HomeIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
-					<button className="btn-navbar">
-						<NavLink to="/favoritas" className={ActiveClass}>
-							<li>
-								<BookmarkIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
-
-					<button className="btn-navbar">
-						<NavLink to="/mis-recetas" className={ActiveClass}>
-							<li>
-								<BlenderIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
-					<button className="btn-navbar">
-						<NavLink to="/nueva-receta" className={ActiveClass}>
-							<li>
-								<AddCircleIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
-					<button className="btn-navbar">
-						<NavLink to="/ayuda" className={ActiveClass}>
-							<li>
-								<HelpIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
-					<button className="btn-navbar">
-						<NavLink to="/login" className={ActiveClass}>
-							<li>
-								{" "}
-								<ExitToAppIcon sx={{ fontSize: 40 }} />
-							</li>
-						</NavLink>
-					</button>
+					{links.map((link, index) => (
+						<button className="btn-navbar" key={index}>
+							<NavLink to={link.to} className={ActiveClass}>
+								<li>{link.icon}</li>
+							</NavLink>
+						</button>
+					))}
 				</ul>
 			</div>
 		</nav>
