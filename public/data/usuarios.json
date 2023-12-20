@@ -1,0 +1,32 @@
+[
+  {
+    "id": "user1",
+    "nombre": "Juan Pérez",
+    "email": "juanperez@example.com",
+    "contrasena": "contrasenaHash1",
+    "fotoPerfil": "https://example.com/fotos/juanperez.jpg",
+    "biografia": "Amante de la cocina italiana y la repostería casera.",
+    "recetasPublicadas": [],
+    "recetasFavoritas": ["receta3", "receta4"]
+  },
+  {
+    "id": "user2",
+    "nombre": "Ana Gómez",
+    "email": "anagomez@example.com",
+    "contrasena": "contrasenaHash2",
+    "fotoPerfil": "https://example.com/fotos/anagomez.jpg",
+    "biografia": "Experta en cocina vegana y platos saludables.",
+    "recetasPublicadas": [],
+    "recetasFavoritas": ["receta1", "receta2"]
+  },
+  {
+    "id": "user3",
+    "nombre": "Carlos López",
+    "email": "carloslopez@example.com",
+    "contrasena": "contrasenaHash3",
+    "fotoPerfil": "https://example.com/fotos/carloslopez.jpg",
+    "biografia": "Chef profesional especializado en cocina fusión.",
+    "recetasPublicadas": [],
+    "recetasFavoritas": ["receta1", "receta3"]
+  }
+]

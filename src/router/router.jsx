@@ -10,22 +10,67 @@ import AgregarReceta from "../views/AgregarReceta";
 import MisRecetas from "../views/MisRecetas";
 import Ayuda from "../views/Ayuda";
 import NotFound from "../views/NotFound";
+import ProtectedRoute from "../components/ProtectedRoute";
 
 const router = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home/:nombre" element={<RecetaCard />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/registro" element={<Registro />} />
-            <Route path="/perfil" element={<Perfil />} />
-            <Route path="/favoritas" element={<RecetasFavoritas />} />
-            <Route path="/mis-recetas" element={<MisRecetas />} />
-            <Route path="/nueva-receta" element={<AgregarReceta />} />
-            <Route path="/ayuda" element={<Ayuda />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
-    );
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/registro" element={<Registro />} />
+      <Route path="/ayuda" element={<Ayuda />} />
+
+      <Route
+        path="/"
+        element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/home/:nombre"
+        element={
+          <ProtectedRoute>
+            <RecetaCard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/perfil"
+        element={
+          <ProtectedRoute>
+            <Perfil />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/favoritas"
+        element={
+          <ProtectedRoute>
+            <RecetasFavoritas />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/mis-recetas"
+        element={
+          <ProtectedRoute>
+            <MisRecetas />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/nueva-receta"
+        element={
+          <ProtectedRoute>
+            <AgregarReceta />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
 };
 
 export default router;
