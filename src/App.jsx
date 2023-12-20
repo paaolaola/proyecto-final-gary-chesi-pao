@@ -8,28 +8,28 @@ import GlobalProvider from "./context/GlobalProvider";
 
 /*falta agregar el provider*/
 const App = () => {
-	return (
-		<GlobalProvider>
-			<BrowserRouter>
-				<div className="grid-content">
-					<div className="buscador-content">
-						<Buscador />
-					</div>
+  return (
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="grid-content">
+          <div className="buscador-content">
+            <Buscador />
+          </div>
 
-					<div className="barra-lateral">
-						<Navbar />
-					</div>
+          <div className="barra-lateral">
+            <Navbar />
+          </div>
 
-					<div className="main-content">
-						<Router />
-					</div>
-					<div className="footer-content">
-						<Footer />
-					</div>
-				</div>
-			</BrowserRouter>
-		</GlobalProvider>
-	);
+          <div className="main-content">
+            <Router />
+          </div>
+          <div className="footer-content">
+            <Footer />
+          </div>
+        </div>
+      </BrowserRouter>
+    </GlobalProvider>
+  );
 };
 
 export default App;
