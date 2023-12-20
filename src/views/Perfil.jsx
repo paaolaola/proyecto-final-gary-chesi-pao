@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Card from "../components/Card";
+
 import "../components/Card";
 import "../views/Home";
 /* import "../assets/css/Perfil.css"; */
