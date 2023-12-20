@@ -1,56 +1,64 @@
 .detalle-receta-main {
-    display: grid;
-    min-height: 50vh;
-    padding: 1rem;
-    grid-template-areas:
-        "proceso img"
-        "proceso desc";
-    .nombre-ayuda,
-    p {
-        text-align: center;
-    }
-    li {
-        margin-top: 1rem;
-    }
+	display: grid;
+	min-height: 50vh;
+	padding: 1rem;
+	grid-template-areas:
+		"proceso img"
+		"proceso desc";
+	.nombre-ayuda,
+	p {
+		text-align: center;
+	}
+	li {
+		margin-top: 1rem;
+	}
+	@media (max-width: 700px) {
+		grid-template-areas:
+			"img"
+			"proceso "
+			" desc";
+	}
 }
 
 .detalle-receta-img {
-    grid-area: img;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
+	grid-area: img;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	margin: auto;
 }
 
 .receta-card-img {
-    margin: auto;
+	margin: auto;
 }
 
 .detalle-receta-desc {
-    grid-area: desc;
+	grid-area: desc;
 }
 
 .detalle-receta-proceso {
-    grid-area: proceso;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 5%;
+	grid-area: proceso;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 5%;
 }
 
 .detalle-receta-ingredientes {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .detalle-receta-instrucciones {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }

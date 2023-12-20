@@ -58,8 +58,8 @@ const RecetaCard = () => {
 							<h2 className="nombre-ayuda">Video/Imagen</h2>
 							{receta.video_youtube ? (
 								<iframe
-									width="560"
-									height="315"
+									width="360"
+									height="215"
 									src={receta.video_youtube}
 									title="YouTube video player"
 									frameBorder="0"
