@@ -1,6 +1,7 @@
 nav {
 	height: 100%;
 }
+
 .navbar {
 	display: flex;
 	flex-direction: column;
@@ -11,7 +12,15 @@ nav {
 	color: var(--color-quinto);
 	width: 120px;
 	height: 100%;
+
+	@media (max-width: 700px) {
+		width: 100%; /* Ancho completo para pantallas más pequeñas */
+		flex-direction: row;
+		height: auto;
+		justify-content: space-between;
+	}
 }
+
 .logo-navbar {
 	margin: 2rem 0 8rem 0;
 	text-align: center;
@@ -41,19 +50,98 @@ nav {
 	list-style: none;
 	cursor: pointer;
 	transition: all 0.3s;
+
+	@media (max-width: 700px) {
+		width: 100%; /* Ancho completo para pantallas más pequeñas */
+		margin-top: 0.5rem; /* Ajusta el espaciado según tus necesidades */
+	}
 }
+
 .nav-ul {
 	margin: auto;
 	padding: 0;
 }
+
 .btn-navbar:hover {
 	transform: scale(1.1);
 }
-/*iconos con la const ActiveClass*/
+
+/* iconos con la const ActiveClass */
 .btn-activo {
 	color: #a5a58d;
 }
 
 .btn-inactivo {
 	color: #6b705c;
+}
+
+.btn-navbar {
+	background: var(--color-tercero);
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	width: 4rem;
+	margin-top: 3rem;
+	border-style: none;
+	list-style: none;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-top: 0.5rem;
+	}
+}
+
+/* Estilos para el menú desplegable */
+
+.btn-navbar {
+	background: var(--color-tercero);
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	width: 4rem;
+	margin-top: 3rem;
+	border-style: none;
+	list-style: none;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-top: 0.5rem;
+	}
+}
+
+/* Estilos para el menú desplegable */
+.nav-ul {
+	margin: auto;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (max-width: 700px) {
+		display: none;
+	}
+}
+
+.bg-body-tertiary {
+	background-color: var(--color-tercero) !important;
+	width: 100%;
+
+	margin: 0;
+}
+
+.contain,
+.container-sm {
+	padding: 10px; /* Ajusta el espacio interno según tus necesidades */
+	color: black;
+	margin: auto;
+	width: 100% !important;
+	a {
+		color: black;
+	}
+	button {
+	}
 }

@@ -1,31 +1,32 @@
 .contenedor-ayuda {
-    background-image: url(img/pexels-1.jpg);
-    background-size: cover;
-    background-position: 50% 70%;
-    padding: 5rem 10rem;
-    text-align: right;
+	background-image: url(img/pexels-1.jpg);
+	background-size: cover;
+	background-position: 50% 70%;
+	padding: 20px 0;
+	text-align: right;
 }
 .seccion-ayuda {
-    padding: 5rem;
-    text-align: justify;
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--color-tercero);
+	padding: 2rem;
+	margin: 0px 40px;
+	text-align: justify;
+	border: 1px solid var(--color-tercero);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--color-tercero);
 }
 .titulo-ayuda {
-    text-align: center;
+	text-align: center;
 }
 .nombre-ayuda {
-    font-weight: 700;
-    margin: 20px 0;
-    text-decoration: underline;
+	font-weight: 700;
+	margin: 20px 0;
+	text-decoration: underline;
 }
 .texto-ayuda {
-    font-weight: 300;
-    margin-top: 10px;
+	font-weight: 300;
+	margin-top: 10px;
 }
 .mail-ayuda {
-    margin-top: 20px;
-    text-align: center;
+	margin-top: 20px;
+	text-align: center;
 }
