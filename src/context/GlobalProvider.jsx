@@ -4,8 +4,10 @@ export const GlobalContext = createContext();
 
 const GlobalProvider = ({ children }) => {
   const [data, setData] = useState(null);
+  const [ordered, setOrdered] = useState(null);
   const [favorites, setFavorites] = useState([]);
   const [error, setError] = useState(null);
+  const [busqueda, setBusqueda] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,7 +38,7 @@ const GlobalProvider = ({ children }) => {
     console.log(data);
   };
 
-  const state = { data, setData, recetas, setRecetas, agregarReceta, favorites, setFavorites };
+  const state = { data, setData, recetas, setRecetas, agregarReceta, favorites, setFavorites, busqueda, setBusqueda };
 
   return <GlobalContext.Provider value={state}>{children}</GlobalContext.Provider>;
 };
