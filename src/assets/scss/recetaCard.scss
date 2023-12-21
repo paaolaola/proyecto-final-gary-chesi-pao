@@ -21,20 +21,16 @@
             "img"
             "proceso "
             " desc";
+        width: 100%;
     }
 }
 .seccion-card {
-    width: 100%;
-    margin: 0px 20px;
     text-align: justify;
     border: 1px solid var(--color-tercero);
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--color-tercero);
-
-    @media (max-width: 700px) {
-        margin: auto;
-    }
+    padding-top: 3rem;
 }
 
 .contenedor-detalle {
@@ -43,7 +39,11 @@
     background-position: 50% 70%;
     text-align: right;
     height: 100%;
+    padding: 0 20px;
     padding-bottom: 2rem;
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 }
 
 .detalle-receta-img {
@@ -63,6 +63,10 @@
     width: 100%;
 }
 
+.detalle-receta-descripcion {
+    margin: 0 20px;
+}
+
 .detalle-receta-proceso {
     grid-area: proceso;
     display: flex;
@@ -78,6 +82,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 .detalle-receta-instrucciones {
     margin-bottom: 1rem;
@@ -85,4 +90,5 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }

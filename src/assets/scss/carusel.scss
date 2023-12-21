@@ -1,11 +1,11 @@
 .carousel-header {
-    height: 120px;
+    height: 100px;
     color: black;
 }
 
 .carousel-header img {
     object-fit: cover;
-    height: 120px;
+    height: 100px;
     width: 100%;
 }
 
@@ -20,4 +20,18 @@
 
 .carousel-caption p {
     font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+    .carousel-header img {
+        height: 100px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
 }
