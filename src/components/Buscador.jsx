@@ -6,8 +6,7 @@ import OrdenarRecetas from "./OrdenarRecetas";
 const Buscador = () => {
   return (
     <>
-      <div className="contenedor-ord">
-        <OrdenarRecetas />
+      <div className="contenedor-busq">
         <form className="form-busq">
           <input type="search" placeholder="BUSCA RECETAS O INGREDIENTES"></input>
           <button className="btn-busq">Buscar</button>

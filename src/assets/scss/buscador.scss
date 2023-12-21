@@ -1,61 +1,45 @@
-.contenedor-ord {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-tercero);
-  p {
-    font-size: 0.7rem;
-    margin: 0;
-    padding: 0;
-  }
-}
-
 .contenedor-busq {
   display: flex;
   flex-direction: row;
   padding: 1rem 7rem;
-  background-color: var(--color-tercero);
+  background-color: var(--color-quinto);
+  @media (max-width: 700px) {
+    padding: 1rem 1rem;
+  }
 }
-
 .form-busq {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 10px 10px;
+  margin: 0 10px;
 }
 
 .form-busq input {
   background-color: #ffffff;
-  width: 80%;
+  width: 100%;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
   border-style: none;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 .btn-busq {
-  background: var(--color-primero);
-  color: var(--color-sexto);
-  width: 60px;
+  background: var(--color-sexto);
+  color: var(--color-tercero);
+  width: 80px;
   padding: 0.5rem;
   margin-left: 1rem;
   border-radius: 10px;
   border-style: none;
   text-align: center;
   cursor: pointer;
-}
-.btn-ord {
-  background: var(--color-primero);
-  color: var(--color-sexto);
-
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  border-radius: 10px;
-  border-style: none;
-  text-align: center;
-  cursor: pointer;
+  @media (max-width: 700px) {
+    width: 80px;
+  }
 }
 .btn-busq-perfil {
   width: 45px;
@@ -63,4 +47,5 @@
   border-radius: 50%;
   border-style: none;
   cursor: pointer;
+  background-color: black; //por mientras
 }
