@@ -9,6 +9,8 @@ import GlobalProvider from "./context/GlobalProvider";
 import Carusel from "./components/Carusel";
 
 import NavbarColapse from "./components/NavbarColapse";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 /*falta agregar el provider*/
 const App = () => {
@@ -32,38 +34,45 @@ const App = () => {
 	}, []);
 
 	return (
-		<GlobalProvider>
-			<BrowserRouter>
-				{" "}
-				<div className="grid-content">
-					<div className="carusel">
-						<Carusel />
-					</div>
-					<div className="buscador-content">
-						<Buscador />
-					</div>
+		<>
+			<ToastContainer
+				position="top-center" // Configura la posición de los toasts
+				autoClose={1000} // Configura la duración en milisegundos (3 segundos en este ejemplo
+				newestOnTop={true}
+				closeOnClick // Cierra el toast haciendo clic en él
+			/>
+			<GlobalProvider>
+				<BrowserRouter>
+					<div className="grid-content">
+						<div className="carusel">
+							<Carusel />
+						</div>
+						<div className="buscador-content">
+							<Buscador />
+						</div>
 
-					<div className="barra-lateral">
-						{windowWidth > 700 ? (
-							// Renderiza Navbar para pantallas grandes
-							<Navbar onToggle={toggleNavbar} />
-						) : (
-							// Renderiza NavbarCollapse para pantallas pequeñas
-							isNavbarOpen && (
-								<NavbarColapse onClose={toggleNavbar} />
-							)
-						)}
-					</div>
+						<div className="barra-lateral">
+							{windowWidth > 700 ? (
+								// Renderiza Navbar para pantallas grandes
+								<Navbar onToggle={toggleNavbar} />
+							) : (
+								// Renderiza NavbarCollapse para pantallas pequeñas
+								isNavbarOpen && (
+									<NavbarColapse onClose={toggleNavbar} />
+								)
+							)}
+						</div>
 
-					<div className="main-content">
-						<Router />
+						<div className="main-content">
+							<Router />
+						</div>
+						<div className="footer-content">
+							<Footer />
+						</div>
 					</div>
-					<div className="footer-content">
-						<Footer />
-					</div>
-				</div>
-			</BrowserRouter>
-		</GlobalProvider>
+				</BrowserRouter>
+			</GlobalProvider>
+		</>
 	);
 };
 

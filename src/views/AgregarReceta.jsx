@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalProvider";
+import { toast } from "react-toastify";
 
 const AgregarReceta = () => {
 	const { recetas, agregarReceta, data } = useContext(GlobalContext);
@@ -106,7 +107,7 @@ const AgregarReceta = () => {
 		// Si todas las validaciones son verdaderas, agregar la receta
 		if (Object.values(validations).every((isValid) => isValid)) {
 			agregarReceta(recipe);
-			console.log("Receta enviada:", recipe);
+			toast.success("Receta enviada con éxito");
 
 			// Limpia el formulario o realiza otras acciones
 			setRecipe({
@@ -133,7 +134,7 @@ const AgregarReceta = () => {
 			});
 		} else {
 			// Muestra mensajes de error o realiza acciones correspondientes
-			console.log("Error en la validación");
+			toast.error("Error en la validación");
 		}
 	};
 
@@ -168,7 +169,7 @@ const AgregarReceta = () => {
 				</div>
 				<div>
 					<label htmlFor="ingredientes">
-						Ingredientes: (separarlos por linea){" "}
+						Ingredientes: (separarlos por línea){" "}
 					</label>
 					<div className="error-message">{errors.ingredientes}</div>
 					<textarea
