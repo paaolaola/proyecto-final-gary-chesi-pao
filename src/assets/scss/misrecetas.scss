@@ -23,7 +23,7 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 20px;
 }
 
@@ -40,7 +40,7 @@
     border: 2px solid var(--color-tercero);
     overflow: hidden;
     @media (max-width: 700px) {
-        width: 150px;
+        width: 300px;
         display: block;
         text-align: left;
         box-sizing: border-box;
