@@ -55,7 +55,7 @@ const RecetaCard = () => {
                         </div>
 
                         <div className="detalle-receta-img">
-                            <h2 className="nombre-ayuda">Video/Imagen</h2>
+                            <h3>Video/Imagen</h3>
                             {receta.video_youtube ? (
                                 <iframe
                                     width="360"
@@ -71,7 +71,7 @@ const RecetaCard = () => {
                             )}
                         </div>
                         <div className="detalle-receta-descripcion">
-                            <h2 className="nombre-ayuda">Descripcion</h2>
+                            <h3>Descripcion</h3>
                             <p>{receta.descripcion}</p>
                         </div>
                     </div>

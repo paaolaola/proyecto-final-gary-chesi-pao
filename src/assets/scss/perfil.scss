@@ -22,7 +22,6 @@
     padding: 5px 0;
     text-align: right;
     height: 100%;
-    padding-bottom: 2rem;
 }
 .seccion-perfil {
     text-align: justify;
@@ -33,6 +32,10 @@
     margin: 20px;
 }
 
+.titulo-perfil {
+    text-align: center;
+    padding-top: 4rem;
+}
 .profile-img {
     grid-area: img;
     max-width: 25rem;
@@ -95,6 +98,7 @@
 }
 
 .profile-main {
+    padding: 3rem 0;
     .nombre-ayuda,
     p {
         text-align: center;
