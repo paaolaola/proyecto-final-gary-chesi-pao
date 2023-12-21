@@ -3,22 +3,24 @@ nav {
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-tercero);
-    color: var(--color-quinto);
-    width: 120px;
-    height: 100%;
 
-    @media (max-width: 700px) {
-        width: 100%; /* Ancho completo para pantallas más pequeñas */
-        flex-direction: row;
-        height: auto;
-        justify-content: space-between;
-    }
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color-tercero);
+	color: var(--color-quinto);
+	width: 120px;
+	height: 100%;
+
+	@media (max-width: 700px) {
+		width: 100%; /* Ancho completo para pantallas más pequeñas */
+		flex-direction: row;
+		height: auto;
+		justify-content: space-between;
+	}
+
 }
 
 .logo-navbar {
@@ -115,15 +117,23 @@ nav {
 
 /* Estilos para el menú desplegable */
 .nav-ul {
-    margin: auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    @media (max-width: 700px) {
-        display: none;
-    }
+	margin: auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 100%;
+	@media (max-width: 700px) {
+		display: none;
+	}
+	li {
+		margin-bottom: 50px;
+	}
+
+ 
+
 }
 
 .bg-body-tertiary {

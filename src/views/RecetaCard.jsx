@@ -19,8 +19,7 @@ const RecetaCard = () => {
 
 	return (
 		<>
-			<div className="home-container"></div>
-			<main className="contenedor-ayuda">
+			<main className="contenedor-detalle">
 				<div className="seccion-ayuda">
 					<h1 className="titulo-ayuda">{receta.nombre}</h1>
 					<div className="detalle-receta-main">

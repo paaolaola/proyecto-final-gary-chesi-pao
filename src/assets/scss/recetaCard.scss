@@ -12,12 +12,23 @@
 	li {
 		margin-top: 1rem;
 	}
+	ol {
+		list-style: none;
+	}
 	@media (max-width: 700px) {
 		grid-template-areas:
 			"img"
 			"proceso "
 			" desc";
 	}
+}
+.contenedor-detalle {
+	background-image: url(img/pexels-1.jpg);
+	background-size: cover;
+	background-position: 50% 70%;
+	padding: 20px 0;
+	text-align: right;
+	height: 100%;
 }
 
 .detalle-receta-img {
