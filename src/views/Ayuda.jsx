@@ -28,7 +28,7 @@ const Ayuda = () => {
                 <li className="texto-ayuda ">En qué formato deben estar las imágenes o videos que quiera subir?</li>
                 <p>Las imágenes deben tener la extensión JPEG y no deben pesar más de 1mb. Los videos deben estar en formato mp4 y pesar menos de 7mb.</p>
 
-                <h3 className="mail-ayuda">Si no hemos podido responder todas tus dudas, escríbenos a ayuda@recetapp.cl</h3>
+                <h5 className="mail-ayuda">Si no hemos podido responder todas tus dudas, escríbenos a ayuda@recetapp.cl</h5>
             </div>
         </main>
     );

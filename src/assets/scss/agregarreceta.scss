@@ -1,86 +1,83 @@
 // RecipeForm.scss
 .back-form {
-	background-image: url(img/pexels-6.jpg);
-	background-size: cover;
-	padding: 100px;
-	background-position: 50% 50%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	text-align: right;
+    background-image: url(img/pexels-6.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+    padding-bottom: 2rem;
+    text-align: right;
 }
 .titulo-receta {
-	color: var(--color-tercero);
-	text-align: center;
-	font-weight: bold;
-	padding: 3rem;
+    color: var(--color-tercero);
+    text-align: center;
+    font-weight: bold;
+    padding: 3rem;
 }
 .recipe-form {
-	text-align: justify;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	padding: 2rem 5rem;
-	max-width: 500px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 5rem;
 
-	@media (max-width: 700px) {
-		padding: 10px 20px;
-	}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 20px;
 
-	label {
-		display: block;
-		margin-bottom: 10px;
-		color: white;
-	}
+    @media (max-width: 700px) {
+        padding: 10px 20px;
+    }
 
-	input,
-	textarea {
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 30px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		transition: border-color 0.3s;
-		font-size: 16px;
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: white;
+    }
 
-		&:focus {
-			outline: none;
-			border-color: var(--color-primero);
-		}
-	}
+    input,
+    textarea {
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+        font-size: 16px;
 
-	button {
-		color: var(--color-tercero);
-		padding: 12px;
-		border: none;
-		background-color: var(--color-sexto);
-		border-radius: 10px;
-		cursor: pointer;
-		font-size: 18px;
-		transition: background-color 0.3s;
-		max-width: 200px;
-		margin: auto;
+        &:focus {
+            outline: none;
+            border-color: var(--color-primero);
+        }
+    }
 
-		&:hover {
-			background-color: var(--color-quinto);
-		}
-		&:active {
-			transform: scale(0.98);
-			box-shadow: none;
-		}
-	}
+    button {
+        color: var(--color-tercero);
+        padding: 12px;
+        border: none;
+        background-color: var(--color-sexto);
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        max-width: 200px;
+        margin: auto;
+
+        &:hover {
+            background-color: var(--color-quinto);
+        }
+        &:active {
+            transform: scale(0.98);
+            box-shadow: none;
+        }
+    }
 }
 
 .error-message {
-	color: red;
-	font-weight: 700;
-	font-size: large;
+    color: red;
+    font-weight: 700;
+    font-size: large;
 }

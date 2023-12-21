@@ -1,75 +1,88 @@
 .detalle-receta-main {
-	display: grid;
-	min-height: 50vh;
-	padding: 1rem;
-	grid-template-areas:
-		"proceso img"
-		"proceso desc";
-	.nombre-ayuda,
-	p {
-		text-align: center;
-	}
-	li {
-		margin-top: 1rem;
-	}
-	ol {
-		list-style: none;
-	}
-	@media (max-width: 700px) {
-		grid-template-areas:
-			"img"
-			"proceso "
-			" desc";
-	}
+    display: grid;
+    min-height: 50vh;
+    padding: 1rem;
+
+    grid-template-areas:
+        "proceso img"
+        "proceso desc";
+    .nombre-ayuda,
+    p {
+        text-align: center;
+    }
+    li {
+        margin-top: 1rem;
+    }
+    ol {
+        list-style: none;
+    }
+    @media (max-width: 700px) {
+        grid-template-areas:
+            "img"
+            "proceso "
+            " desc";
+    }
 }
+.seccion-card {
+    width: 100%;
+    margin: 0px 20px;
+    text-align: justify;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-tercero);
+
+    @media (max-width: 700px) {
+        margin: auto;
+    }
+}
+
 .contenedor-detalle {
-	background-image: url(img/pexels-1.jpg);
-	background-size: cover;
-	background-position: 50% 70%;
-	padding: 20px 0;
-	text-align: right;
-	height: 100%;
+    background-image: url(img/pexels-1.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+    text-align: right;
+    height: 100%;
+    padding-bottom: 2rem;
 }
 
 .detalle-receta-img {
-	grid-area: img;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	padding: 1rem;
-	margin: auto;
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .receta-card-img {
-	margin: auto;
+    margin: auto;
 }
 
 .detalle-receta-desc {
-	grid-area: desc;
+    grid-area: desc;
+    width: 100%;
 }
 
 .detalle-receta-proceso {
-	grid-area: proceso;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding: 1rem;
-	border-radius: 5%;
+    grid-area: proceso;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5%;
 }
 
 .detalle-receta-ingredientes {
-	margin-bottom: 1rem;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .detalle-receta-instrucciones {
-	margin-bottom: 1rem;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
