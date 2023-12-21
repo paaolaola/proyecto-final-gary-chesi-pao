@@ -1,5 +1,4 @@
-// RecipeTable.scss
-// RecipeForm.scss
+
 .back-form-2 {
     background-image: url(img/pexels-8.jpg);
     background-size: cover;
@@ -75,6 +74,7 @@
     }
 
     .recipe-table thead th {
-        display: block; /* Cambia de 'none' a 'block' para que los th sean visibles */
+        display: block;
     }
+
 }
