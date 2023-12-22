@@ -57,6 +57,15 @@
         padding: 15px;
         text-align: left;
         border-bottom: 1px solid #ddd;
+        a {
+            color: rgb(114, 114, 114);
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        a:hover {
+            color: var(--color-primero);
+        }
     }
 
     th {

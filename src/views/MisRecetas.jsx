@@ -1,9 +1,10 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalProvider";
 import Table from "react-bootstrap/Table";
 const MisRecetas = () => {
     const { recetas } = useContext(GlobalContext);
+    const navigate = useNavigate();
     return (
         <>
             <div className="back-form-2">
@@ -26,7 +27,11 @@ const MisRecetas = () => {
                             {recetas.map((receta, index) => (
                                 <tr key={index}>
                                     <td>{index + 1}</td>
-                                    <td>{receta.nombre}</td>
+                                    <td>
+                                        <Link to={`/home/${receta.nombre}`} onClick={() => navigate(`/receta/${receta.nombre}`)}>
+                                            {receta.nombre}
+                                        </Link>
+                                    </td>
                                     <td>{receta.ingredientes}</td>
                                     <td>{receta.tipo}</td>
                                 </tr>
