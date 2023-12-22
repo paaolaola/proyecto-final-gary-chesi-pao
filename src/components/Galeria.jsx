@@ -7,6 +7,11 @@ import Card from "./Card";
 const Galeria = () => {
 	const { data, textoBusqueda, favorites } = useContext(GlobalContext);
 	const location = useLocation();
+	if (!location || !data) {
+		// Puedes redirigir a una página de carga o hacer algo más
+		return null;
+	}
+
 	let datosMostrar = location.pathname === "/favoritas" ? favorites : data;
 	let recetasAMostrar =
 		textoBusqueda.trim() === ""
