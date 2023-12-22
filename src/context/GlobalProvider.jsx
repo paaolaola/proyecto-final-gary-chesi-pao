@@ -40,6 +40,7 @@ const GlobalProvider = ({ children }) => {
 		console.log(data);
 	};
 	const [currentUser, setCurrentUser] = useState(null);
+
 	const [loginData, setLoginData] = useState([
 		{
 			user: "admin",
@@ -57,7 +58,9 @@ const GlobalProvider = ({ children }) => {
 
 	const logout = () => {
 		sessionStorage.removeItem("token");
-		setSession(false); // Actualizar el estado de la sesión
+		setSession(false);
+		setCurrentUser(null);
+		toast.error("cerraste session"); // Actualizar el estado de la sesión
 		// Puedes agregar lógica adicional aquí si es necesario
 	};
 
