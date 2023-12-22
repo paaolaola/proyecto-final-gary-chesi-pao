@@ -17,66 +17,72 @@
 @import "carusel.scss";
 
 #root {
-	--color-primero: #cb997e;
-	--color-segundo: #ddbea9;
-	--color-tercero: #ffe8d6;
-	--color-cuarto: #b7b7a4;
-	--color-quinto: #a5a58d;
-	--color-sexto: #6b705c;
+    --color-primero: #cb997e;
+    --color-segundo: #ddbea9;
+    --color-tercero: #ffe8d6;
+    --color-cuarto: #b7b7a4;
+    --color-quinto: #a5a58d;
+    --color-sexto: #6b705c;
 }
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
-	text-decoration: none;
-	color: var(--color-tercero);
+    text-decoration: none;
+    color: var(--color-tercero);
 }
 .grid-content {
-	display: grid;
-	grid-template-areas:
-		"barra-lateral carusel"
-		"barra-lateral buscador-content"
-		"barra-lateral main-content"
-		"barra-lateral main-content"
-		"footer-content footer-content";
-	grid-template-rows: auto auto 1fr 1fr auto;
-	grid-template-columns: 120px 1fr;
-	min-height: 100vh;
-	overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "barra-lateral carusel"
+        "barra-lateral buscador-content"
+        "barra-lateral main-content"
+        "barra-lateral main-content"
+        "footer-content footer-content";
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-columns: 120px 1fr;
+    min-height: 100vh;
+    overflow: hidden;
 
-	@media (max-width: 700px) {
-		grid-template-areas:
-			"carusel"
-			"barra-lateral"
-			"buscador-content"
-			"main-content"
-			"footer-content";
-		grid-template-rows: auto auto auto 1fr auto;
-		grid-template-columns: 1fr;
-	}
+    @media (max-width: 700px) {
+        grid-template-areas:
+            "carusel"
+            "barra-lateral"
+            "buscador-content"
+            "main-content"
+            "footer-content";
+        grid-template-rows: auto auto auto 1fr auto;
+        grid-template-columns: 1fr;
+    }
 }
 
 .carusel {
-	grid-area: carusel;
+    grid-area: carusel;
 }
 
 .buscador-content {
-	grid-area: buscador-content;
+    grid-area: buscador-content;
 }
 
 .barra-lateral {
-	grid-area: barra-lateral;
+    grid-area: barra-lateral;
 }
 
 .main-content {
-	grid-area: main-content;
+    grid-area: main-content;
 }
 
 .footer-content {
-	grid-area: footer-content;
+    grid-area: footer-content;
+}
+
+.texto-condic {
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-tercero);
 }
 /*RESPONSIVE*/

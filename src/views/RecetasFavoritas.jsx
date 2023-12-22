@@ -1,28 +1,25 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import { GlobalContext } from "../context/GlobalProvider";
 import Galeria from "../components/Galeria";
 
 const RecetasFavoritas = () => {
-  const { favorites } = useContext(GlobalContext);
+    const { favorites } = useContext(GlobalContext);
 
-  return (
-    <div className="fondo-favoritas">
-      <Link to="/">
-        <button className="btn-global">Volver al home</button>
-      </Link>
+    return (
+        <div className="fondo-favoritas">
+            <Link to="/">
+                <button className="btn-global">Volver al home</button>
+            </Link>
 
-      <div className="contenedor-home">
-        <div>
-          <h1 className="titulo-favoritas">Tus Recetas Favoritas</h1>
+            <div className="contenedor-home">
+                <div>
+                    <h1 className="titulo-favoritas">Tus Recetas Favoritas</h1>
+                </div>
+                <div className="galeria-favoritas">{favorites.length === 0 ? <p className="texto-condic">Aún no agregas recetas.</p> : <Galeria />}</div>
+            </div>
         </div>
-        <div className="galeria-favoritas">
-          <Galeria />
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default RecetasFavoritas;
