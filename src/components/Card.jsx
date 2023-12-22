@@ -55,24 +55,6 @@ const Card = ({ receta }) => {
                         }}
                     />
                 </button>
-                <button className="iconos-card">
-                    <IosShareIcon
-                        sx={{
-                            fontSize: 30,
-                            color: "#ffe8d6",
-                            margin: "0 1rem",
-                        }}
-                    />
-                </button>
-                <button className="iconos-card">
-                    <ChatBubbleIcon
-                        sx={{
-                            fontSize: 28,
-                            color: "#ffe8d6",
-                            margin: "0 1rem",
-                        }}
-                    />
-                </button>
             </div>
         </div>
     );

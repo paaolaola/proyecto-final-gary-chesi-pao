@@ -8,63 +8,61 @@ import HelpIcon from "@mui/icons-material/Help";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 const Navbar = () => {
-	const ActiveClass = ({ isActive }) =>
-		isActive ? "btn-activo" : "btn-inactivo";
+    const ActiveClass = ({ isActive }) => (isActive ? "btn-activo" : "btn-inactivo");
 
-	const links = [
-		{ to: "/", label: "Inicio", icon: <HomeIcon sx={{ fontSize: 40 }} /> },
-		{
-			to: "/favoritas",
-			label: "Favoritas",
-			icon: <BookmarkIcon sx={{ fontSize: 40 }} />,
-		},
-		{
-			to: "/mis-recetas",
-			label: "Mis Recetas",
-			icon: <BlenderIcon sx={{ fontSize: 40 }} />,
-		},
-		{
-			to: "/nueva-receta",
-			label: "Nueva Receta",
-			icon: <AddCircleIcon sx={{ fontSize: 40 }} />,
-		},
-		{
-			to: "/ayuda",
-			label: "Ayuda",
-			icon: <HelpIcon sx={{ fontSize: 40 }} />,
-		},
-		{
-			to: "/login",
-			label: "Login",
-			icon: <ExitToAppIcon sx={{ fontSize: 40 }} />,
-		},
-	];
+    const links = [
+        { to: "/", label: "Inicio", icon: <HomeIcon sx={{ fontSize: 40 }} /> },
+        {
+            to: "/favoritas",
+            label: "Favoritas",
+            icon: <BookmarkIcon sx={{ fontSize: 40 }} />,
+        },
+        {
+            to: "/mis-recetas",
+            label: "Mis Recetas",
+            icon: <BlenderIcon sx={{ fontSize: 40 }} />,
+        },
+        {
+            to: "/nueva-receta",
+            label: "Nueva Receta",
+            icon: <AddCircleIcon sx={{ fontSize: 40 }} />,
+        },
+        {
+            to: "/ayuda",
+            label: "Ayuda",
+            icon: <HelpIcon sx={{ fontSize: 40 }} />,
+        },
+        {
+            to: "/login",
+            label: "Login",
+            icon: <ExitToAppIcon sx={{ fontSize: 40 }} />,
+        },
+    ];
 
-	return (
-		<nav>
-			<div className="navbar">
-				<Link to="/">
-					<div className="logo-navbar">
-						<img
-							className="img-navbar"
-							src="../img/gorro-chef.png"
-							alt="gorro-chef"
-						></img>
-						<h5 className="texto-navbar ">RECETAPP</h5>
-					</div>
-				</Link>
-				<ul className="nav-ul">
-					{links.map((link, index) => (
-						<button className="btn-navbar" key={index}>
-							<NavLink to={link.to} className={ActiveClass}>
-								<li>{link.icon}</li>
-							</NavLink>
-						</button>
-					))}
-				</ul>
-			</div>
-		</nav>
-	);
+    const customTexts = ["Inicio", "Favoritas", "Mis Recetas", "Nueva Receta", "Ayuda", "Salir"];
+
+    return (
+        <nav>
+            <div className="navbar">
+                <Link to="/">
+                    <div className="logo-navbar">
+                        <img className="img-navbar" src="../img/gorro-chef.png" alt="gorro-chef"></img>
+                        <h5 className="texto-navbar ">RECETAPP</h5>
+                    </div>
+                </Link>
+                <ul className="nav-ul">
+                    {links.map((link, index) => (
+                        <button className="btn-navbar" key={index}>
+                            <NavLink to={link.to} className={ActiveClass}>
+                                <li>{link.icon}</li>
+                                <span className="icon-text">{customTexts[index]}</span>
+                            </NavLink>
+                        </button>
+                    ))}
+                </ul>
+            </div>
+        </nav>
+    );
 };
 
 export default Navbar;
