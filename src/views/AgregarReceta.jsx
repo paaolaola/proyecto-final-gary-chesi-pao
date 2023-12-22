@@ -169,7 +169,7 @@ const AgregarReceta = () => {
 				</div>
 				<div>
 					<label htmlFor="ingredientes">
-						Ingredientes: (separarlos por línea){" "}
+						Ingredientes: ( minimo 2 y separarlos por línea){" "}
 					</label>
 					<div className="error-message">{errors.ingredientes}</div>
 					<textarea
