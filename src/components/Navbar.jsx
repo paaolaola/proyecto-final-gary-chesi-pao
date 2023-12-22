@@ -15,7 +15,7 @@ const Navbar = () => {
         {
             to: "/favoritas",
             label: "Favoritas",
-            icon: <BookmarkIcon sx={{ fontSize: 40 }} />,
+            icon: <BookmarkIcon sx={{ fontSize: 40, margin: "0" }} />,
         },
         {
             to: "/mis-recetas",
