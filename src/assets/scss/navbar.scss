@@ -1,131 +1,130 @@
 nav {
-    height: 100%;
+	height: 100%;
 }
 
 .navbar {
-    display: flex;
+	display: flex;
 
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-tercero);
-    color: var(--color-quinto);
-    width: 120px;
-    height: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color-tercero);
+	color: var(--color-quinto);
+	width: 120px;
+	height: 100%;
 
-    @media (max-width: 700px) {
-        width: 100%; /* Ancho completo para pantallas más pequeñas */
-        flex-direction: row;
-        height: auto;
-        justify-content: space-between;
-    }
+	@media (max-width: 700px) {
+		width: 100%; /* Ancho completo para pantallas más pequeñas */
+		flex-direction: row;
+		height: auto;
+		justify-content: space-between;
+	}
 }
-
+.nav-li {
+	margin: 0;
+}
 .logo-navbar {
-    margin: 2rem 0 8rem 0;
-    text-align: center;
-    cursor: pointer;
+	margin: 2rem 0 8rem 0;
+	text-align: center;
+	cursor: pointer;
 }
 
 .img-navbar {
-    margin-bottom: 1rem;
-    width: 80px;
-    text-align: center;
+	margin-bottom: 1rem;
+	width: 80px;
+	text-align: center;
 }
 
 .texto-navbar {
-    font-size: 1rem;
-    letter-spacing: 1px;
-    color: var(--color-sexto);
+	font-size: 1rem;
+	letter-spacing: 1px;
+	color: var(--color-sexto);
 }
 
 .icono .btn-navbar {
-    background: var(--color-tercero);
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    width: 4rem;
-    margin-top: 3rem;
-    border-style: none;
-    list-style: none;
-    cursor: pointer;
-    transition: all 0.3s;
+	background: var(--color-tercero);
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	width: 4rem;
+	margin-top: 2rem;
+	border-style: none;
+	list-style: none;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    @media (max-width: 700px) {
-        width: 100%; /* Ancho completo para pantallas más pequeñas */
-        margin-top: 0.5rem; /* Ajusta el espaciado según tus necesidades */
-    }
+	@media (max-width: 700px) {
+		width: 100%; /* Ancho completo para pantallas más pequeñas */
+		margin-top: 0.5rem; /* Ajusta el espaciado según tus necesidades */
+	}
 }
 
 .nav-ul {
-    margin: auto;
-    padding: 0;
+	margin: auto;
+	padding: 0;
 }
 
 .btn-navbar:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* iconos con la const ActiveClass */
 .btn-activo {
-    color: #a5a58d;
+	color: #a5a58d;
 }
 
 .btn-inactivo {
-    color: #6b705c;
+	color: #6b705c;
 }
 
 .btn-navbar {
-    background: var(--color-tercero);
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    width: 4rem;
-    margin-top: 1rem;
-    border-style: none;
-    list-style: none;
-    cursor: pointer;
-    transition: all 0.3s;
+	background: var(--color-tercero);
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	width: 4rem;
+	margin-top: 1rem;
+	border-style: none;
+	list-style: none;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    @media (max-width: 700px) {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-top: 0.5rem;
+	}
 }
 
 /* Estilos para el menú desplegable */
 
 .btn-navbar {
-    background: var(--color-tercero);
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    width: 4rem;
-    margin-top: 3rem;
-    border-style: none;
-    list-style: none;
-    cursor: pointer;
-    transition: all 0.3s;
+	background: var(--color-tercero);
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	width: 4rem;
+	margin-top: 3rem;
+	border-style: none;
+	list-style: none;
+	cursor: pointer;
+	transition: all 0.3s;
 
-    @media (max-width: 700px) {
-        width: 100%;
-        margin-top: 0.5rem;
-    }
+	@media (max-width: 700px) {
+		width: 100%;
+		margin-top: 0.5rem;
+	}
 }
 
 /* Estilos para el menú desplegable */
 .nav-ul {
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 100%;
-    @media (max-width: 700px) {
-        display: none;
-    }
-    li {
-        margin-bottom: 50px;
-    }
+	margin: auto;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: 100%;
+	@media (max-width: 700px) {
+		display: none;
+	}
 }
