@@ -12,65 +12,65 @@ import Ayuda from "../views/Ayuda";
 import NotFound from "../views/NotFound";
 import ProtectedRoute from "../components/ProtectedRoute";
 
-const router = () => {
-  return (
-    <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/registro" element={<Registro />} />
-      <Route path="/ayuda" element={<Ayuda />} />
+const Router = () => {
+	return (
+		<Routes>
+			<Route path="/login" element={<Login />} />
+			<Route path="/registro" element={<Registro />} />
+			<Route path="/ayuda" element={<Ayuda />} />
 
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/home/:nombre"
-        element={
-          <ProtectedRoute>
-            <RecetaCard />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/perfil"
-        element={
-          <ProtectedRoute>
-            <Perfil />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/favoritas"
-        element={
-          <ProtectedRoute>
-            <RecetasFavoritas />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/mis-recetas"
-        element={
-          <ProtectedRoute>
-            <MisRecetas />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/nueva-receta"
-        element={
-          <ProtectedRoute>
-            <AgregarReceta />
-          </ProtectedRoute>
-        }
-      />
+			<Route
+				path="/"
+				element={
+					<ProtectedRoute>
+						<Home />
+					</ProtectedRoute>
+				}
+			/>
+			<Route
+				path="/home/:nombre"
+				element={
+					<ProtectedRoute>
+						<RecetaCard />
+					</ProtectedRoute>
+				}
+			/>
+			<Route
+				path="/perfil"
+				element={
+					<ProtectedRoute>
+						<Perfil />
+					</ProtectedRoute>
+				}
+			/>
+			<Route
+				path="/favoritas"
+				element={
+					<ProtectedRoute>
+						<RecetasFavoritas />
+					</ProtectedRoute>
+				}
+			/>
+			<Route
+				path="/mis-recetas"
+				element={
+					<ProtectedRoute>
+						<MisRecetas />
+					</ProtectedRoute>
+				}
+			/>
+			<Route
+				path="/nueva-receta"
+				element={
+					<ProtectedRoute>
+						<AgregarReceta />
+					</ProtectedRoute>
+				}
+			/>
 
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
+			<Route path="*" element={<NotFound />} />
+		</Routes>
+	);
 };
 
-export default router;
+export default Router;
