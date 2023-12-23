@@ -33,7 +33,7 @@ const RecetaCard = () => {
                     <h1 className="titulo-ayuda">{receta.nombre}</h1>
                     <div className="detalle-receta-main">
                         <div className="detalle-receta-proceso">
-                            <h2 className="nombre-ayuda">Cocinemos!</h2>
+                            <h2 className="nombre-ayuda">¡Cocinemos!</h2>
                             <div className="detalle-receta-detalles">
                                 <div className="detalle-receta-ingredientes">
                                     <h3>Ingredientes</h3>
