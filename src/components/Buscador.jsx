@@ -30,11 +30,19 @@ const Buscador = () => {
 					</NavLink>
 					<NavLink to="/perfil">
 						<div className="user-container">
-							<img
-								src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png"
-								alt="Imagen de usuario"
-								className="user-image"
-							/>
+							{currentUser && currentUser.fotoURL ? (
+								<img
+									src={currentUser.fotoURL}
+									alt="Imagen de usuario"
+									className="user-image"
+								/>
+							) : (
+								<img
+									src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png"
+									alt="Imagen de usuario predeterminada"
+									className="user-image"
+								/>
+							)}
 						</div>
 					</NavLink>
 				</div>
