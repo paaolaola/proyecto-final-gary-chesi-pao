@@ -58,13 +58,14 @@
         text-align: left;
         border-bottom: 1px solid #ddd;
         a {
-            color: rgb(114, 114, 114);
+            color: var(--color-primero);
             text-decoration: none;
             text-transform: capitalize;
+            font-weight: 700;
         }
 
         a:hover {
-            color: var(--color-primero);
+            color: var(--color-segundo);
         }
     }
 
