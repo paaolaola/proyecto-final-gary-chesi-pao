@@ -45,10 +45,22 @@ const GlobalProvider = ({ children }) => {
 		{
 			user: "admin",
 			password: "admin123",
+			nombre: "Administrador",
+			apellido: "Admin",
+			edad: 30,
+			email: "admin@example.com",
+			fotoURL:
+				"https://i.pinimg.com/564x/18/d9/2a/18d92a9388914413a1211e786a270828.jpg", // Campo para la URL de la foto
 		},
 		{
 			user: "chesi",
 			password: "chesi",
+			nombre: "Chesi",
+			apellido: "ApellidoChesi",
+			edad: 25,
+			email: "chesi@example.com",
+			fotoURL:
+				"https://www.sopitas.com/wp-content/uploads/2020/05/meme-perrito-musculoso-perrito-cabizbajo-pelea-generaciones.jpg", // Campo para la URL de la foto
 		},
 	]);
 	const addNewUser = (newUser) => {

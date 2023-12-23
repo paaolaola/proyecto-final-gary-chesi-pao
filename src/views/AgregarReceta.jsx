@@ -171,7 +171,7 @@ const AgregarReceta = () => {
 				</div>
 				<div>
 					<label htmlFor="ingredientes">
-						( minimo 2 y separarlos por línea)
+						( Minimo 2 y separarlos por línea)
 					</label>
 					<div className="error-message">{errors.ingredientes}</div>
 					<textarea
@@ -196,6 +196,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
+					<label htmlFor="video_youtube">
+						(Incorporar URL video embed)
+					</label>
 					<div className="error-message">{errors.video_youtube}</div>
 					<input
 						placeholder="Video URL:"

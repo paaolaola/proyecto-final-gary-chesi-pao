@@ -1,39 +1,71 @@
-import { useNavigate, Link } from "react-router-dom";
 import React, { useContext, useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalProvider";
 import { toast } from "react-toastify";
 
 const Registro = () => {
 	const navigate = useNavigate();
-
 	const { addNewUser } = useContext(GlobalContext);
+
 	const [newUser, setNewUser] = useState({
 		user: "",
 		password: "",
 		confirmPassword: "",
+		nombre: "",
+		apellido: "",
+		edad: "",
+		email: "",
+		fotoURL: "", // Campo para la URL de la foto
 	});
-	const handleRegister = () => {
+
+	const handleRegister = (e) => {
+		e.preventDefault();
+		const urlPattern = /^(ftp|http|https):\/\/[^ "]+$/;
+		if (!urlPattern.test(newUser.fotoURL)) {
+			toast.error("Ingrese una URL de foto válida");
+			return;
+		}
 		// Validaciones u otras operaciones necesarias antes de agregar el nuevo usuario
-		if (newUser.password === newUser.confirmPassword) {
+		if (
+			newUser.password.length >= 5 &&
+			newUser.password === newUser.confirmPassword
+		) {
+			// Agregar lógica para almacenar el nuevo usuario
 			addNewUser({
 				user: newUser.user,
 				password: newUser.password,
+				nombre: newUser.nombre,
+				apellido: newUser.apellido,
+				edad: newUser.edad,
+				email: newUser.email,
+				fotoURL: newUser.fotoURL,
 			});
-			// Restablecer el estado para limpiar los campos
+
+			// Restablecer el estado para limpiar los campos después de registrar
 			setNewUser({
 				user: "",
 				password: "",
 				confirmPassword: "",
+				nombre: "",
+				apellido: "",
+				edad: "",
+				email: "",
+				fotoURL: "",
 			});
-			// Redirigir a la página de inicio de sesión si es necesario
-			toast.success("registro completado con exito");
+
+			// Puedes redirigir a la página de inicio de sesión si es necesario
+			toast.success("Registro completado con éxito");
 			navigate("/login");
-			// Puedes usar 'navigate' aquí si estás utilizando React Router
 		} else {
 			// Mostrar un mensaje de error o manejar la no coincidencia de contraseñas
-			toast.error("Las contraseñas no coinciden");
+			if (newUser.password.length < 5) {
+				toast.error("La contraseña debe tener al menos 5 caracteres");
+			} else {
+				toast.error("Las contraseñas no coinciden");
+			}
 		}
 	};
+
 	return (
 		<>
 			<div>
@@ -42,7 +74,7 @@ const Registro = () => {
 
 			<div className="contenedor-reg">
 				<div className="form">
-					<form>
+					<form onSubmit={handleRegister}>
 						<div>
 							<div className="receta-form">
 								<input
@@ -83,11 +115,72 @@ const Registro = () => {
 									}
 								/>
 							</div>
-							<button
-								type="submit"
-								className="btn-global"
-								onClick={handleRegister}
-							>
+							<div className="receta-form">
+								<input
+									type="text"
+									placeholder="Nombre"
+									value={newUser.nombre}
+									onChange={(e) =>
+										setNewUser({
+											...newUser,
+											nombre: e.target.value,
+										})
+									}
+								/>
+							</div>
+							<div className="receta-form">
+								<input
+									type="text"
+									placeholder="Apellido"
+									value={newUser.apellido}
+									onChange={(e) =>
+										setNewUser({
+											...newUser,
+											apellido: e.target.value,
+										})
+									}
+								/>
+							</div>
+							<div className="receta-form">
+								<input
+									type="number"
+									placeholder="Edad"
+									value={newUser.edad}
+									onChange={(e) =>
+										setNewUser({
+											...newUser,
+											edad: e.target.value,
+										})
+									}
+								/>
+							</div>
+							<div className="receta-form">
+								<input
+									type="email"
+									placeholder="Email"
+									value={newUser.email}
+									onChange={(e) =>
+										setNewUser({
+											...newUser,
+											email: e.target.value,
+										})
+									}
+								/>
+							</div>
+							<div className="receta-form">
+								<input
+									type="text"
+									placeholder="URL de la foto de perfil"
+									value={newUser.fotoURL}
+									onChange={(e) =>
+										setNewUser({
+											...newUser,
+											fotoURL: e.target.value,
+										})
+									}
+								/>
+							</div>
+							<button type="submit" className="btn-global">
 								Registrar
 							</button>
 						</div>
