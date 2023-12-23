@@ -1,7 +1,6 @@
 import Galeria from "../components/Galeria";
 
 const Home = () => {
-	console.log("localstorageHome", localStorage);
 	return (
 		<>
 			<div className="fondo-home">

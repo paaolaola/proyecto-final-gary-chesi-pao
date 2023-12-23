@@ -15,8 +15,6 @@ const Login = () => {
 	const login = (e) => {
 		e.preventDefault(); // Evitar el comportamiento por defecto del formulario
 
-		console.log("Intento de inicio de sesión:", user, password);
-
 		// Obtener usuario y contraseña del estado
 		const isValidUser = loginData.some(
 			(userData) =>
@@ -25,7 +23,7 @@ const Login = () => {
 
 		if (isValidUser) {
 			sessionStorage.setItem("token", "test_gary");
-			console.log("localstorageasdasd", localStorage);
+
 			setSession(true); // Establecer el estado de la sesión
 			// Obtener el objeto de usuario actual
 			const currentUser = loginData.find(
@@ -40,7 +38,6 @@ const Login = () => {
 
 			// Redirigir después del inicio de sesión exitoso
 			navigate("/");
-			console.log(currentUser.user);
 		} else {
 			setSession(false); // Asegurar que la sesión se establezca en false en caso de error
 			toast.error("Usuario o contraseña incorrecto(s)");

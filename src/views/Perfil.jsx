@@ -9,7 +9,7 @@ import Table from "react-bootstrap/Table";
 const Perfil = () => {
 	const { logout, currentUser, favorites, recetas } =
 		useContext(GlobalContext);
-	console.log(favorites);
+
 	return (
 		<>
 			<main className="contenedor-perfil ">
