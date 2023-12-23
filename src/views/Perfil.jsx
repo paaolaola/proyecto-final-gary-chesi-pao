@@ -51,7 +51,6 @@ const Perfil = () => {
                                         <tr>
                                             <th>Número</th>
                                             <th>Nombre</th>
-
                                             <th>Tipo</th>
                                         </tr>
                                     </thead>
@@ -71,7 +70,6 @@ const Perfil = () => {
                                     </tbody>
                                 </Table>
                             )}
-                            <div className="profile-mis-recetas-cont"></div>
                         </div>
                     </div>
                     <Link to="/login">
