@@ -25,13 +25,12 @@
 	background-color: var(--color-tercero) !important;
 	width: 100%;
 	border-bottom: var(--color-primero) 1px solid;
-
+	padding: 0px;
 	margin: 0;
 }
 
 .contain,
 .container-sm {
-	padding: 10px; /* Ajusta el espacio interno según tus necesidades */
 	color: black;
 	margin: auto;
 	width: 100% !important;
