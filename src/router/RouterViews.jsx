@@ -12,7 +12,7 @@ import Ayuda from "../views/Ayuda";
 import NotFound from "../views/NotFound";
 import ProtectedRoute from "../components/ProtectedRoute";
 
-const Router = () => {
+const RouterViews = () => {
 	return (
 		<Routes>
 			<Route path="/login" element={<Login />} />
@@ -73,4 +73,4 @@ const Router = () => {
 	);
 };
 
-export default Router;
+export default RouterViews;

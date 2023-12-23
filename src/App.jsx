@@ -1,7 +1,7 @@
 import "./assets/scss/App.scss";
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Router from "./router/Router";
+
 import Navbar from "./components/Navbar";
 import Buscador from "./components/Buscador";
 import Footer from "./components/Footer";
@@ -11,6 +11,7 @@ import Carusel from "./components/Carusel";
 import NavbarColapse from "./components/NavbarColapse";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import RouterViews from "./router/RouterViews";
 
 /*falta agregar el provider*/
 const App = () => {
@@ -64,7 +65,7 @@ const App = () => {
 						</div>
 
 						<div className="main-content">
-							<Router />
+							<RouterViews />
 						</div>
 						<div className="footer-content">
 							<Footer />
