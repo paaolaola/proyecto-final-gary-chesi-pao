@@ -1,6 +1,6 @@
 .logo-mobile {
-	margin-bottom: 1rem;
-	width: 70px;
+	margin-bottom: 10px;
+	width: 40px;
 	text-align: center;
 }
 .logo-area {
@@ -12,6 +12,7 @@
 .logo-texto {
 	font-size: 15px;
 	letter-spacing: 1px;
+	margin: 0;
 	color: var(--color-sexto);
 }
 
@@ -23,6 +24,7 @@
 .bg-body-tertiary {
 	background-color: var(--color-tercero) !important;
 	width: 100%;
+	border-bottom: var(--color-primero) 1px solid;
 
 	margin: 0;
 }
@@ -55,6 +57,7 @@
 	padding: 0.5rem;
 	border-radius: 10px;
 	text-decoration: none;
+	font-size: 0.8em;
 	text-align: center;
 	transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
 }

@@ -1,7 +1,7 @@
 .contenedor-busq {
 	display: flex;
 	flex-direction: row;
-	padding: 1rem 2rem;
+	padding: 10px 10px;
 	background-color: var(--color-tercero);
 	@media (max-width: 700px) {
 		padding: 1rem 0.5rem;
@@ -10,7 +10,7 @@
 .form-busq {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 	margin: 0 10px;
@@ -20,6 +20,11 @@
 }
 .user-text {
 	color: var(--color-primero);
+	margin: 0;
+	text-align: center;
+	@media (max-width: 700px) {
+		font-size: 0.8em;
+	}
 }
 .form-busq input {
 	background-color: #ffffff;
@@ -30,20 +35,28 @@
 	border-style: none;
 	@media (max-width: 700px) {
 		font-size: 10px;
+		padding: 5px;
 	}
 }
 .btn-busq {
 	background: var(--color-sexto);
 	color: var(--color-tercero);
-	width: 80px;
-	padding: 0.5rem;
-	margin-left: 1rem;
+	width: 140px;
+	padding: 10px;
+	margin-left: 5px;
 	border-radius: 10px;
 	border-style: none;
 	text-align: center;
 	cursor: pointer;
+	transition: all 0.3s;
+	&:hover {
+		opacity: 0.8;
+		transform: scale(1.03);
+	}
 	@media (max-width: 700px) {
-		width: 80px;
+		width: 60px;
+		font-size: 0.6em;
+		padding: 5px;
 	}
 }
 .btn-busq-perfil {
@@ -53,4 +66,21 @@
 	border-style: none;
 	cursor: pointer;
 	background-color: var(--color-primero);
+}
+.user-container {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.user-image {
+	width: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+	height: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+	border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
+	border: 1px black solid;
+	margin: 0px 10px; /* Ajusta el margen entre la imagen y el nombre de usuario */
+	@media (max-width: 700px) {
+		width: 30px;
+		height: 30px;
+	}
 }
