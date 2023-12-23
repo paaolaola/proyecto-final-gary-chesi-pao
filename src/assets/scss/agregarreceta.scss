@@ -1,84 +1,99 @@
 // RecipeForm.scss
 .back-form {
-    background-image: url(img/pexels-6.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    height: 100%;
-    padding-bottom: 2rem;
-    text-align: right;
+	background-image: url(img/pexels-6.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100%;
+	padding-bottom: 2rem;
+	text-align: right;
 }
 .titulo-receta {
 	color: var(--color-tercero);
 	text-align: center;
 	font-weight: bold;
 	padding: 1rem;
-
 }
 .recipe-form {
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem 5rem;
+	border: 1px solid var(--color-tercero);
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 2rem 5rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0px 20px;
 
-    @media (max-width: 700px) {
-        padding: 10px 20px;
-    }
+	@media (max-width: 700px) {
+		padding: 10px 20px;
+	}
 
-    label {
-        display: block;
-        margin-bottom: 10px;
-        color: white;
-    }
+	label {
+		display: block;
+		margin-bottom: 10px;
+		color: white;
+	}
 
-    input,
-    textarea {
-        width: 70%;
-        padding: 10px;
-        margin-bottom: 30px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        transition: border-color 0.3s;
-        font-size: 16px;
+	input,
+	textarea {
+		width: 70%;
+		padding: 10px;
+		margin-bottom: 30px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		transition: border-color 0.3s;
+		font-size: 16px;
 
-        &:focus {
-            outline: none;
-            border-color: var(--color-primero);
-        }
-    }
+		&:focus {
+			outline: none;
+			border-color: var(--color-primero);
+		}
+	}
 
-    button {
-        color: var(--color-tercero);
-        padding: 12px;
-        border: none;
-        background-color: var(--color-sexto);
-        border-radius: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        transition: background-color 0.3s;
-        max-width: 200px;
-        margin: auto;
+	button {
+		color: var(--color-tercero);
+		padding: 12px;
+		border: none;
+		background-color: var(--color-sexto);
+		border-radius: 10px;
+		cursor: pointer;
+		font-size: 18px;
+		transition: background-color 0.3s;
+		max-width: 200px;
+		margin: auto;
 
-        &:hover {
-            background-color: var(--color-quinto);
-        }
-        &:active {
-            transform: scale(0.98);
-            box-shadow: none;
-        }
-    }
+		&:hover {
+			background-color: var(--color-quinto);
+		}
+		&:active {
+			transform: scale(0.98);
+			box-shadow: none;
+		}
+	}
 }
 
 .error-message {
-    color: red;
-    font-weight: 700;
-    font-size: large;
+	color: red;
+	font-weight: 700;
+	font-size: large;
+}
+.form-nombre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.form-class {
+	text-align: start;
+	width: 100%;
+	margin: 5px;
+}
+.form-lass {
+	text-align: end;
+	width: 100%;
+	margin: 5px;
 }

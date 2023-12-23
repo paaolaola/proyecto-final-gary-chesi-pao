@@ -16,10 +16,10 @@ const Buscador = () => {
 				<form className="form-busq">
 					<input
 						type="search"
-						placeholder="BUSCA RECETAS O INGREDIENTES"
+						placeholder="Busca tus recetas"
 						onChange={handleSearchChange}
 					></input>
-					<button className="btn-busq">Buscar</button>
+					<OrdenarRecetas />
 				</form>
 				<div className="user-div">
 					<NavLink to="/perfil">
@@ -27,6 +27,15 @@ const Buscador = () => {
 							Bienvenido,{" "}
 							{currentUser ? currentUser.user : "Invitado"}
 						</p>
+					</NavLink>
+					<NavLink to="/perfil">
+						<div className="user-container">
+							<img
+								src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png"
+								alt="Imagen de usuario"
+								className="user-image"
+							/>
+						</div>
 					</NavLink>
 				</div>
 			</div>

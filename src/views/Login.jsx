@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 const Login = () => {
 	const navigate = useNavigate();
-	const { loginData, logout, setSession, setCurrentUser, currentUser } =
+	const { logout, loginData, setSession, setCurrentUser, currentUser } =
 		useContext(GlobalContext);
 	const [user, setUser] = useState("");
 	const [password, setPassword] = useState("");
@@ -79,12 +79,17 @@ const Login = () => {
 							<small>* Usuario o contraseña incorrecto(s)</small>
 						)}
 					</form>
-
 					<h5>
 						No tienes una cuenta?{" "}
 						<Link to="/registro">Regístrate.</Link>
-						<button onClick={logout}>Cerrar Sesión</button>
-					</h5>
+					</h5>{" "}
+					{currentUser && (
+						<Link to="/login">
+							<button className="btn-global" onClick={logout}>
+								Cerrar Sesión
+							</button>
+						</Link>
+					)}
 				</div>
 			</div>
 		</>

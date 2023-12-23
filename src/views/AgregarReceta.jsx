@@ -145,34 +145,37 @@ const AgregarReceta = () => {
 			</Link>
 			<form className="recipe-form" onSubmit={handleSubmit}>
 				<h1 className="titulo-receta">Agrega Tu Receta</h1>
-				<div>
-					<label htmlFor="nombre">Nombre:</label>
-					<div className="error-message">{errors.nombre}</div>
-					<input
-						type="text"
-						id="nombre"
-						name="nombre"
-						value={recipe.nombre}
-						onChange={handleChange}
-					/>
-				</div>
-				<div>
-					<label htmlFor="tipo">Tipo:</label>{" "}
-					<div className="error-message">{errors.tipo}</div>
-					<input
-						type="text"
-						id="tipo"
-						name="tipo"
-						value={recipe.tipo}
-						onChange={handleChange}
-					/>
+				<div className="form-nombre">
+					<div className="form-lass">
+						<div className="error-message">{errors.nombre}</div>
+						<input
+							placeholder="Nombre:"
+							type="text"
+							id="nombre"
+							name="nombre"
+							value={recipe.nombre}
+							onChange={handleChange}
+						/>
+					</div>
+					<div className="form-class">
+						<div className="error-message">{errors.tipo}</div>
+						<input
+							placeholder="Tipo:"
+							type="text"
+							id="tipo"
+							name="tipo"
+							value={recipe.tipo}
+							onChange={handleChange}
+						/>
+					</div>
 				</div>
 				<div>
 					<label htmlFor="ingredientes">
-						Ingredientes: ( minimo 2 y separarlos por línea){" "}
+						( minimo 2 y separarlos por línea)
 					</label>
 					<div className="error-message">{errors.ingredientes}</div>
 					<textarea
+						placeholder="Ingredientes: "
 						id="ingredientes"
 						name="ingredientes"
 						value={recipe.ingredientes.join("\n")}
@@ -181,9 +184,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
-					<label htmlFor="imagen">Imagen URL:</label>
 					<div className="error-message">{errors.imagen}</div>
 					<input
+						placeholder="Imagen URL:"
 						type="text"
 						id="imagen"
 						name="imagen"
@@ -193,9 +196,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
-					<label htmlFor="video_youtube">Video URL:</label>
 					<div className="error-message">{errors.video_youtube}</div>
 					<input
+						placeholder="Video URL:"
 						type="text"
 						id="video_youtube"
 						name="video_youtube"
@@ -205,9 +208,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
-					<label htmlFor="categoria">Categoría:</label>{" "}
 					<div className="error-message">{errors.categoria}</div>
 					<input
+						placeholder="Categoría:"
 						type="text"
 						id="categoria"
 						name="categoria"
@@ -217,9 +220,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
-					<label htmlFor="descripcion">Descripción:</label>
 					<div className="error-message">{errors.descripcion}</div>
 					<textarea
+						placeholder="Descripción:"
 						id="descripcion"
 						name="descripcion"
 						value={recipe.descripcion}
@@ -228,9 +231,9 @@ const AgregarReceta = () => {
 				</div>
 
 				<div>
-					<label htmlFor="preparacion">Preparación:</label>{" "}
 					<div className="error-message">{errors.preparacion}</div>
 					<textarea
+						placeholder="Preparación:"
 						id="preparacion"
 						name="preparacion"
 						value={recipe.preparacion}
