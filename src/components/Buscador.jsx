@@ -4,43 +4,32 @@ import { GlobalContext } from "../context/GlobalProvider";
 import OrdenarRecetas from "./OrdenarRecetas";
 
 const Buscador = () => {
-	const { data, setTextoBusqueda, currentUser } = useContext(GlobalContext);
+    const { data, setTextoBusqueda, currentUser } = useContext(GlobalContext);
 
-	const handleSearchChange = (e) => {
-		setTextoBusqueda(e.target.value);
-	};
+    const handleSearchChange = (e) => {
+        setTextoBusqueda(e.target.value);
+    };
 
-	return (
-		<>
-			<div className="contenedor-busq">
-				<form className="form-busq">
-					<input
-						type="search"
-						placeholder="Busca tus recetas"
-						onChange={handleSearchChange}
-					></input>
-					<OrdenarRecetas />
-				</form>
-				<div className="user-div">
-					<NavLink to="/perfil">
-						<p className="user-text">
-							Bienvenido,{" "}
-							{currentUser ? currentUser.user : "Invitado"}
-						</p>
-					</NavLink>
-					<NavLink to="/perfil">
-						<div className="user-container">
-							<img
-								src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png"
-								alt="Imagen de usuario"
-								className="user-image"
-							/>
-						</div>
-					</NavLink>
-				</div>
-			</div>
-		</>
-	);
+    return (
+        <>
+            <div className="contenedor-busq">
+                <form className="form-busq">
+                    <input type="search" placeholder="Busca una receta" onChange={handleSearchChange}></input>
+                    <OrdenarRecetas />
+                </form>
+                <div className="user-div">
+                    <NavLink to="/perfil">
+                        <p className="user-text">Bienvenido, {currentUser ? currentUser.user : "Invitado"}</p>
+                    </NavLink>
+                    <NavLink to="/perfil">
+                        <div className="user-container">
+                            <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" alt="Imagen de usuario" className="user-image" />
+                        </div>
+                    </NavLink>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Buscador;
