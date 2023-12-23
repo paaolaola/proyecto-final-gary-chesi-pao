@@ -100,11 +100,7 @@
 .profile-desc h2 {
     margin: 1rem 0;
 }
-.profile-favorites {
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    margin: 1rem;
-}
+
 .profile-favorites-cont {
     display: flex;
     margin: 2rem;
@@ -139,6 +135,8 @@
     margin: 10px;
     padding: 10px;
     flex-wrap: wrap;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
 }
 .favorites-cont {
     display: grid;
