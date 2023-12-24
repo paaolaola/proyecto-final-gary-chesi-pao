@@ -4,6 +4,7 @@ import { GlobalContext } from "../context/GlobalProvider";
 import "../components/Card";
 import "../views/Home";
 import Table from "react-bootstrap/Table";
+import { toast } from "react-toastify";
 /* import "../assets/css/Perfil.css"; */
 
 const Perfil = () => {
@@ -27,11 +28,10 @@ const Perfil = () => {
 		setEditedUser((prev) => ({ ...prev, [name]: value }));
 	};
 
-	// Función para guardar los cambios después de la edición
 	const handleSaveChanges = () => {
-		// Aquí podrías agregar lógica para enviar los cambios al backend si lo tuvieras
 		setCurrentUser((prev) => ({ ...prev, ...editedUser }));
 		setIsEditing(false);
+		toast.success("Cambios guardados exitosamente");
 	};
 
 	return (
