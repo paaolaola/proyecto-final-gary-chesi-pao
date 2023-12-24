@@ -14,7 +14,7 @@ const Buscador = () => {
         <>
             <div className="contenedor-busq">
                 <form className="form-busq">
-                    <input type="search" placeholder="Busca tus recetas" onChange={handleSearchChange}></input>
+                    <input type="search" placeholder="Busca una receta" onChange={handleSearchChange}></input>
                     <OrdenarRecetas />
                 </form>
                 <div className="user-div">
