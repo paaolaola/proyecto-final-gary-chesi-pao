@@ -69,7 +69,7 @@ const Perfil = () => {
 											onChange={handleInputChange}
 										/>
 										<input
-											type="text"
+											type="number"
 											id="edad"
 											name="edad"
 											value={editedUser.edad}
