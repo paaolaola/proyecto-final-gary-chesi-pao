@@ -1,8 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
-import IosShareIcon from "@mui/icons-material/IosShare";
-import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalProvider";
 
@@ -24,11 +22,6 @@ const Card = ({ receta }) => {
         }
     };
     const isFavorite = favorites.some((fav) => fav.nombre === receta.nombre);
-
-    const handleClick = (nombre) => {
-        const route = `/home/${nombre}`;
-        navigate(route);
-    };
 
     return (
         <div className="contenedor-card">

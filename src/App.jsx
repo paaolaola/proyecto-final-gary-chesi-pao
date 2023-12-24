@@ -13,68 +13,65 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RouterViews from "./router/RouterViews";
 
-/*falta agregar el provider*/
 const App = () => {
-	const [isNavbarOpen, setNavbarOpen] = useState(true);
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [isNavbarOpen, setNavbarOpen] = useState(true);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-	const toggleNavbar = () => {
-		setNavbarOpen(!isNavbarOpen);
-	};
+    const toggleNavbar = () => {
+        setNavbarOpen(!isNavbarOpen);
+    };
 
-	useEffect(() => {
-		const handleResize = () => {
-			setWindowWidth(window.innerWidth);
-		};
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
 
-		window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);
 
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
-	return (
-		<>
-			<ToastContainer
-				position="top-center" // Configura la posición de los toasts
-				autoClose={1000} // Configura la duración en milisegundos (3 segundos en este ejemplo
-				newestOnTop={true}
-				closeOnClick // Cierra el toast haciendo clic en él
-			/>
-			<GlobalProvider>
-				<BrowserRouter>
-					<div className="grid-content">
-						<div className="carusel">
-							<Carusel />
-						</div>
-						<div className="buscador-content">
-							<Buscador />
-						</div>
+    return (
+        <>
+            <ToastContainer
+                position="top-center" // Configura la posición de los toasts
+                autoClose={1000} // Configura la duración en milisegundos (3 segundos en este ejemplo
+                newestOnTop={true}
+                closeOnClick // Cierra el toast haciendo clic en él
+            />
+            <GlobalProvider>
+                <BrowserRouter>
+                    <div className="grid-content">
+                        <div className="carusel">
+                            <Carusel />
+                        </div>
+                        <div className="buscador-content">
+                            <Buscador />
+                        </div>
 
-						<div className="barra-lateral">
-							{windowWidth > 700 ? (
-								// Renderiza Navbar para pantallas grandes
-								<Navbar onToggle={toggleNavbar} />
-							) : (
-								// Renderiza NavbarCollapse para pantallas pequeñas
-								isNavbarOpen && (
-									<NavbarColapse onClose={toggleNavbar} />
-								)
-							)}
-						</div>
+                        <div className="barra-lateral">
+                            {windowWidth > 700 ? (
+                                // Renderiza Navbar para pantallas grandes
+                                <Navbar onToggle={toggleNavbar} />
+                            ) : (
+                                // Renderiza NavbarCollapse para pantallas pequeñas
+                                isNavbarOpen && <NavbarColapse onClose={toggleNavbar} />
+                            )}
+                        </div>
 
-						<div className="main-content">
-							<RouterViews />
-						</div>
-						<div className="footer-content">
-							<Footer />
-						</div>
-					</div>
-				</BrowserRouter>
-			</GlobalProvider>
-		</>
-	);
+                        <div className="main-content">
+                            <RouterViews />
+                        </div>
+                        <div className="footer-content">
+                            <Footer />
+                        </div>
+                    </div>
+                </BrowserRouter>
+            </GlobalProvider>
+        </>
+    );
 };
 
 export default App;

@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalProvider";
 import { toast } from "react-toastify";
 
 const AgregarReceta = () => {
-    const { recetas, agregarReceta, data } = useContext(GlobalContext);
+    const { agregarReceta, data } = useContext(GlobalContext);
 
     const [recipe, setRecipe] = useState({
         nombre: "",

@@ -5,7 +5,6 @@ export const GlobalContext = createContext();
 
 const GlobalProvider = ({ children }) => {
     const [data, setData] = useState(null);
-    const [ordered, setOrdered] = useState(null);
     const [favorites, setFavorites] = useState([]);
     const [error, setError] = useState(null);
     const [busqueda, setBusqueda] = useState("");
