@@ -26,7 +26,10 @@ const Ayuda = () => {
                 <p>No hay cantidad mínima o máxima para agregar tus favoritos. Tu sólo disfruta de las que más puedas! </p>
                 <p className="nombre-ayuda ">Subida de archivos</p>
                 <li className="texto-ayuda ">En qué formato deben estar las imágenes o videos que quiera subir?</li>
-                <p>Las imágenes deben tener la extensión JPEG y no deben pesar más de 1mb. Los videos deben estar en formato mp4 y pesar menos de 7mb.</p>
+                <p>
+                    Tanto para las imágenes como para los videos debes agregar un link URL. En el caso de los videos, la URL debe ser un embed proveniente de
+                    Youtube, es decir el link directo del video que lo puedes encontrar en el botón de "compartir" desde la misma plataforma.
+                </p>
 
                 <h5 className="mail-ayuda">Si no hemos podido responder todas tus dudas, escríbenos a ayuda@recetapp.cl</h5>
             </div>
