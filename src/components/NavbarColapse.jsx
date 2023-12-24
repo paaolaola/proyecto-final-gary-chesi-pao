@@ -1,12 +1,13 @@
 // NavbarCollapse.js
-import React from "react";
+
 import "../assets/scss/NavbarColapse.scss";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink, Link } from "react-router-dom";
-
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalProvider";
 import HomeIcon from "@mui/icons-material/Home";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
@@ -15,6 +16,7 @@ import HelpIcon from "@mui/icons-material/Help";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 const NavbarCollapse = () => {
+	const { logout, currentUser } = useContext(GlobalContext);
 	const links = [
 		{ to: "/", label: "Inicio", icon: <HomeIcon sx={{ fontSize: 40 }} /> },
 		{
@@ -36,11 +38,6 @@ const NavbarCollapse = () => {
 			to: "/ayuda",
 			label: "Ayuda",
 			icon: <HelpIcon sx={{ fontSize: 40 }} />,
-		},
-		{
-			to: "/login",
-			label: "Login",
-			icon: <ExitToAppIcon sx={{ fontSize: 40 }} />,
 		},
 	];
 
@@ -84,6 +81,20 @@ const NavbarCollapse = () => {
 								</li>
 							</NavLink>
 						))}
+						{currentUser && (
+							<NavLink
+								to="/login"
+								onClick={logout}
+								className="links-colapse"
+							>
+								<li>
+									<span className="icon-small">
+										<ExitToAppIcon sx={{ fontSize: 40 }} />
+									</span>
+									salir
+								</li>
+							</NavLink>
+						)}
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
