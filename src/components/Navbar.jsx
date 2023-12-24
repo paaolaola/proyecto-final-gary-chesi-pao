@@ -1,5 +1,7 @@
 // Navbar.js
 import { NavLink, Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalProvider";
 import HomeIcon from "@mui/icons-material/Home";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
@@ -8,6 +10,7 @@ import HelpIcon from "@mui/icons-material/Help";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 const Navbar = () => {
+	const { logout, currentUser } = useContext(GlobalContext);
 	const ActiveClass = ({ isActive }) =>
 		isActive ? "btn-activo" : "btn-inactivo";
 
@@ -33,11 +36,6 @@ const Navbar = () => {
 			label: "Ayuda",
 			icon: <HelpIcon sx={{ fontSize: 40 }} />,
 		},
-		{
-			to: "/login",
-			label: "Login",
-			icon: <ExitToAppIcon sx={{ fontSize: 40 }} />,
-		},
 	];
 
 	const customTexts = [
@@ -46,7 +44,6 @@ const Navbar = () => {
 		"Mis Recetas",
 		"Nueva Receta",
 		"Ayuda",
-		"Salir",
 	];
 
 	return (
@@ -73,6 +70,18 @@ const Navbar = () => {
 							</NavLink>
 						</button>
 					))}
+
+					{currentUser && (
+						<button className="btn-navbar">
+							<NavLink onClick={logout} to="/login">
+								<ExitToAppIcon
+									className="icon-text"
+									sx={{ fontSize: 40 }}
+								/>{" "}
+								<span className="icon-text">Logout</span>
+							</NavLink>
+						</button>
+					)}
 				</ul>
 			</div>
 		</nav>
