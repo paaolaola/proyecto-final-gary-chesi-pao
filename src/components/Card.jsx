@@ -29,7 +29,7 @@ const Card = ({ receta }) => {
                 <img className="imagen-card" src={receta.imagen} alt="imagenreceta"></img>
                 <div className="caja">
                     <h4 className="titulo-caja">{receta.nombre}</h4>
-                    <NavLink to={`/home/${receta.nombre}`}>
+                    <NavLink to={`/${receta.nombre}`}>
                         <button className="btn-caja">Ver más</button>
                     </NavLink>
                 </div>

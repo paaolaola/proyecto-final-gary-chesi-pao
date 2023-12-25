@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Link } from "react-router-dom";
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalProvider";
 import HomeIcon from "@mui/icons-material/Home";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
@@ -40,8 +40,26 @@ const NavbarCollapse = () => {
         },
     ];
 
+    const [isNavbarFixed, setNavbarFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setNavbarFixed(true);
+            } else {
+                setNavbarFixed(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" variant="light">
+        <Navbar collapseOnSelect expand="lg" className={`bg-body-tertiary ${isNavbarFixed ? "fixed" : ""}`} variant="light">
             <Container className="contain">
                 <Navbar.Brand>
                     <Link to="/">
