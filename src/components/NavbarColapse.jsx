@@ -68,7 +68,7 @@ const NavbarCollapse = () => {
                                     <span className="icon-small">
                                         <ExitToAppIcon sx={{ fontSize: 40 }} />
                                     </span>
-                                    salir
+                                    Salir
                                 </li>
                             </NavLink>
                         )}
