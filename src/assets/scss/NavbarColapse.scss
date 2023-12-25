@@ -1,95 +1,101 @@
 .logo-mobile {
-	margin-bottom: 10px;
-	width: 40px;
-	text-align: center;
+    margin-bottom: 10px;
+    width: 40px;
+    text-align: center;
 }
 .logo-area {
-	margin: 0rem;
-	text-align: center;
-	cursor: pointer;
+    margin: 0rem;
+    text-align: center;
+    cursor: pointer;
 }
 
 .logo-texto {
-	font-size: 15px;
-	letter-spacing: 1px;
-	margin: 0;
-	color: var(--color-sexto);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: var(--color-sexto);
 }
 
 .navbar-dropdown .nav-link {
-	color: var(--color-sexto);
-	margin-right: 10px;
+    color: var(--color-sexto);
+    margin-right: 10px;
 }
 
 .bg-body-tertiary {
-	background-color: var(--color-tercero) !important;
-	width: 100%;
-	border-bottom: var(--color-primero) 1px solid;
-	padding: 0px;
-	margin: 0;
+    background-color: var(--color-tercero) !important;
+    width: 100%;
+    border-bottom: var(--color-primero) 1px solid;
+    padding: 0px;
+    margin: 0;
 }
 
 .contain,
 .container-sm {
-	color: black;
-	margin: auto;
-	width: 100% !important;
-	a {
-		color: black;
-	}
+    color: black;
+    margin: auto;
+    width: 100% !important;
+    a {
+        color: black;
+    }
 }
 .navbar-toggler:focus {
-	box-shadow: none;
+    box-shadow: none;
 }
 .navbar-toggler {
-	transition: all 0.3s;
-	&:hover {
-		transform: scale(1.03);
-		background-color: var(--color-segundo);
-	}
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.03);
+        background-color: var(--color-segundo);
+    }
 }
 /* Estilos para NavLink mapeados */
 /* Estilos para NavLink mapeados en Navbar.Collapse */
 .links-colapse {
-	display: block;
-	color: var(--color-sexto);
-	padding: 0.5rem;
-	border-radius: 10px;
-	text-decoration: none;
-	font-size: 0.8em;
-	text-align: center;
-	transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
+    display: block;
+    color: var(--color-sexto);
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.8em;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
 }
 
 .links-colapse:hover {
-	color: black; /* Color al pasar el mouse */
+    color: black; /* Color al pasar el mouse */
 
-	background-color: var(--color-segundo); /* Fondo al pasar el mouse */
+    background-color: var(--color-segundo); /* Fondo al pasar el mouse */
 }
 
 /* Estilos para Navbar.Collapse */
 .navbar-dropdown {
-	background-color: var(
-		--color-tercero
-	); /* Color de fondo del navbar dropdown */
-	padding: 1rem;
+    background-color: var(--color-tercero); /* Color de fondo del navbar dropdown */
+    padding: 1rem;
 
-	border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    border-radius: 10px; /* Bordes redondeados para un aspecto más suave */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
 }
 
 /* Estilos para el efecto de desplazamiento al abrir y cerrar el Navbar.Collapse */
 .navbar-collapse {
-	transition: max-height 0.5s ease-in-out;
-	max-height: 0;
-	overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .navbar-collapse.show {
-	max-height: 1000px; /* Ajusta el valor según el contenido del navbar */
-	transition: max-height 0.5s ease-in-out;
+    max-height: 1000px; /* Ajusta el valor según el contenido del navbar */
+    transition: max-height 0.5s ease-in-out;
 }
 .icon-small svg {
-	font-size: 1em; /* Ajusta el tamaño según tus necesidades */
-	margin-right: 5px; /* Espacio entre el icono y el texto */
+    font-size: 1em; /* Ajusta el tamaño según tus necesidades */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/*Fijar*/
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* Ajusta otros estilos según sea necesario */
 }
