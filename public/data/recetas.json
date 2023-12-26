@@ -1,97 +1,74 @@
 [
-	{
-		"nombre": "Tarta de Manzana",
-		"ingredientes": ["Manzanas", "Harina", "Azúcar", "Canela"],
-		"imagen": "https://imag.bonviveur.com/tarta-de-manzana.jpg",
-		"video_youtube": "https://www.youtube.com/embed/r5O36U6hmOA?si=usF-xdW9JUCXPyrb",
-		"tipo": "Postre",
-		"categoria": "Repostería",
-		"descripcion": "Una deliciosa tarta de manzana con una capa crujiente y relleno jugoso.",
-		"preparacion": "1. Pelar y cortar las manzanas.\n2. Mezclar las manzanas con harina, azúcar y canela.\n3. Colocar la mezcla en la masa y hornear hasta que esté dorada."
-	},
-	{
-		"nombre": "Pasta Alfredo",
-		"ingredientes": ["Pasta", "Nata", "Queso Parmesano", "Mantequilla"],
-		"imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/facebook_share/public/recipe-thumbnail/116753-cc72869fabfc2bdfa036fd1fe0e2bad8_creamy_alfredo_pasta_long_left.jpg?itok=a50ecnGO",
-		"video_youtube": "https://www.youtube.com/embed/BDqeVnxFoa8?si=1NoTBWNToKMTdcIa",
-		"tipo": "Plato Principal",
-		"categoria": "Italiana",
-		"descripcion": "Una receta clásica de pasta Alfredo con una cremosa salsa de queso parmesano.",
-		"preparacion": "1. Cocinar la pasta según las indicaciones del paquete.\n2. En una sartén, derretir la mantequilla y añadir la nata.\n3. Mezclar con queso parmesano y agregar la pasta cocida."
-	},
-	{
-		"nombre": "Ensalada César",
-		"ingredientes": [
-			"Lechuga",
-			"Pollo a la Parrilla",
-			"Queso Parmesano",
-			"Aderezo César"
-		],
-		"imagen": "https://www.gourmet.cl/wp-content/uploads/2016/09/Ensalada_C%C3%A9sar-web-553x458.jpg",
-		"video_youtube": "https://www.youtube.com/embed/DIFkoFmDxUg?si=1EoG2YLIl2mlxadc",
-		"tipo": "Ensalada",
-		"categoria": "Saludable",
-		"descripcion": "Una ensalada fresca con pollo a la parrilla, queso parmesano y aderezo césar.",
-		"preparacion": "1. Lavar y cortar la lechuga.\n2. Cocinar el pollo a la parrilla y cortarlo en tiras.\n3. Mezclar la lechuga con el pollo, queso parmesano y aderezo."
-	},
-	{
-		"nombre": "Sopa de Tomate",
-		"ingredientes": ["Tomates", "Cebolla", "Ajo", "Caldo de Verduras"],
-		"imagen": "https://www.gourmet.cl/wp-content/uploads/2018/05/Sopa-de-tomate-570x458.jpg",
-		"video_youtube": "https://www.youtube.com/embed/IslrnvVfXSk?si=vxa6dmvWWYaJXtgG",
-		"tipo": "Sopa",
-		"categoria": "Vegetariana",
-		"descripcion": "Una reconfortante sopa de tomate con ingredientes frescos y sabrosos.",
-		"preparacion": "1. Saltear cebolla y ajo en una olla.\n2. Añadir tomates y caldo de verduras.\n3. Cocinar a fuego lento hasta que los tomates estén tiernos."
-	},
-	{
-		"nombre": "Pizza Margarita",
-		"ingredientes": ["Masa de Pizza", "Tomate", "Mozzarella", "Albahaca"],
-		"imagen": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas.jpg",
-		"video_youtube": "https://www.youtube.com/embed/lDCxRKtRwXw?si=7KHD_d3q7iaN_-b0",
-		"tipo": "Pizza",
-		"categoria": "Italiana",
-		"descripcion": "Una pizza clásica con tomate fresco, mozzarella y hojas de albahaca.",
-		"preparacion": "1. Estirar la masa de pizza y colocar tomate y mozzarella.\n2. Hornear hasta que la masa esté dorada.\n3. Agregar hojas de albahaca fresca antes de servir."
-	},
-	{
-		"nombre": "Sushi de Salmón",
-		"ingredientes": [
-			"Arroz para Sushi",
-			"Salmón Fresco",
-			"Alga Nori",
-			"Aguacate"
-		],
-		"imagen": "https://s1.eestatic.com/2019/06/18/cocinillas/actualidad-gastronomica/sushi-pescado-actualidad_gastronomica_407220618_125852168_1706x960.jpg",
-		"video_youtube": "https://www.youtube.com/embed/jiRPnu4AA84?si=M3R0NeHum8O06muF",
-		"tipo": "Sushi",
-		"categoria": "Japonesa",
-		"descripcion": "Rollos de sushi rellenos de salmón fresco y aguacate.",
-		"preparacion": "1. Cocinar el arroz para sushi y enfriarlo.\n2. Cortar el salmón y el aguacate en tiras.\n3. Armar los rollos con arroz, salmón y aguacate envueltos en alga nori."
-	},
-	{
-		"nombre": "Hamburguesa Clásica",
-		"ingredientes": [
-			"Carne de Res",
-			"Pan de Hamburguesa",
-			"Lechuga",
-			"Tomate"
-		],
-		"imagen": "https://d31npzejelj8v1.cloudfront.net/media/recipemanager/recipe/1687289278_clasica-bem.jpg",
-		"video_youtube": "https://www.youtube.com/embed/F6cM7Bbv920?si=pjkMPCEvKWEIfKQ3",
-		"tipo": "Hamburguesa",
-		"categoria": "Americana",
-		"descripcion": "Una hamburguesa clásica con carne jugosa, lechuga y tomate.",
-		"preparacion": "1. Formar las hamburguesas con carne de res.\n2. Cocinar en la parrilla hasta que estén hechas.\n3. Montar la hamburguesa con lechuga, tomate y pan."
-	},
-	{
-		"nombre": "Helado de Vainilla",
-		"ingredientes": ["Leche", "Nata", "Huevo", "Vainilla"],
-		"imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/BGL2O773X5EHXLNWURCUYKERV4.jpg",
-		"video_youtube": "https://www.youtube.com/embed/kFwUDz-VOhw?si=iMs4Wt8mNOTc9Zbw",
-		"tipo": "Postre",
-		"categoria": "Helado",
-		"descripcion": "Helado suave y cremoso con el sabor clásico de la vainilla.",
-		"preparacion": "1. Mezclar la leche con la vainilla.\n2. Batir la nata y añadir a la mezcla.\n3. Congelar hasta que el helado esté listo para servir."
-	}
+  {
+    "nombre": "Tarta de Manzana",
+    "ingredientes": ["Manzanas", "Harina", "Azúcar", "Canela"],
+    "imagen": "https://imag.bonviveur.com/tarta-de-manzana.jpg",
+    "video_youtube": "https://www.youtube.com/embed/r5O36U6hmOA?si=usF-xdW9JUCXPyrb",
+    "tipo": "Postre",
+    "descripcion": "Una deliciosa tarta de manzana con una capa crujiente y relleno jugoso.",
+    "preparacion": "1. Pelar y cortar las manzanas.\n2. Mezclar las manzanas con harina, azúcar y canela.\n3. Colocar la mezcla en la masa y hornear hasta que esté dorada."
+  },
+  {
+    "nombre": "Pasta Alfredo",
+    "ingredientes": ["Pasta", "Nata", "Queso Parmesano", "Mantequilla"],
+    "imagen": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/facebook_share/public/recipe-thumbnail/116753-cc72869fabfc2bdfa036fd1fe0e2bad8_creamy_alfredo_pasta_long_left.jpg?itok=a50ecnGO",
+    "video_youtube": "https://www.youtube.com/embed/BDqeVnxFoa8?si=1NoTBWNToKMTdcIa",
+    "tipo": "Plato Principal",
+    "descripcion": "Una receta clásica de pasta Alfredo con una cremosa salsa de queso parmesano.",
+    "preparacion": "1. Cocinar la pasta según las indicaciones del paquete.\n2. En una sartén, derretir la mantequilla y añadir la nata.\n3. Mezclar con queso parmesano y agregar la pasta cocida."
+  },
+  {
+    "nombre": "Ensalada César",
+    "ingredientes": ["Lechuga", "Pollo a la Parrilla", "Queso Parmesano", "Aderezo César"],
+    "imagen": "https://www.gourmet.cl/wp-content/uploads/2016/09/Ensalada_C%C3%A9sar-web-553x458.jpg",
+    "video_youtube": "https://www.youtube.com/embed/DIFkoFmDxUg?si=1EoG2YLIl2mlxadc",
+    "tipo": "Ensalada",
+    "descripcion": "Una ensalada fresca con pollo a la parrilla, queso parmesano y aderezo césar.",
+    "preparacion": "1. Lavar y cortar la lechuga.\n2. Cocinar el pollo a la parrilla y cortarlo en tiras.\n3. Mezclar la lechuga con el pollo, queso parmesano y aderezo."
+  },
+  {
+    "nombre": "Sopa de Tomate",
+    "ingredientes": ["Tomates", "Cebolla", "Ajo", "Caldo de Verduras"],
+    "imagen": "https://www.gourmet.cl/wp-content/uploads/2018/05/Sopa-de-tomate-570x458.jpg",
+    "video_youtube": "https://www.youtube.com/embed/IslrnvVfXSk?si=vxa6dmvWWYaJXtgG",
+    "tipo": "Plato Principal",
+    "descripcion": "Una reconfortante sopa de tomate con ingredientes frescos y sabrosos.",
+    "preparacion": "1. Saltear cebolla y ajo en una olla.\n2. Añadir tomates y caldo de verduras.\n3. Cocinar a fuego lento hasta que los tomates estén tiernos."
+  },
+  {
+    "nombre": "Pizza Margarita",
+    "ingredientes": ["Masa de Pizza", "Tomate", "Mozzarella", "Albahaca"],
+    "imagen": "https://www.paulinacocina.net/wp-content/uploads/2023/09/pizza-margherita-paulina-cocina-recetas.jpg",
+    "video_youtube": "https://www.youtube.com/embed/lDCxRKtRwXw?si=7KHD_d3q7iaN_-b0",
+    "tipo": "Plato Principal",
+    "descripcion": "Una pizza clásica con tomate fresco, mozzarella y hojas de albahaca.",
+    "preparacion": "1. Estirar la masa de pizza y colocar tomate y mozzarella.\n2. Hornear hasta que la masa esté dorada.\n3. Agregar hojas de albahaca fresca antes de servir."
+  },
+  {
+    "nombre": "Sushi de Salmón",
+    "ingredientes": ["Arroz para Sushi", "Salmón Fresco", "Alga Nori", "Aguacate"],
+    "imagen": "https://s1.eestatic.com/2019/06/18/cocinillas/actualidad-gastronomica/sushi-pescado-actualidad_gastronomica_407220618_125852168_1706x960.jpg",
+    "video_youtube": "https://www.youtube.com/embed/jiRPnu4AA84?si=M3R0NeHum8O06muF",
+    "tipo": "Plato Principal",
+    "descripcion": "Rollos de sushi rellenos de salmón fresco y aguacate.",
+    "preparacion": "1. Cocinar el arroz para sushi y enfriarlo.\n2. Cortar el salmón y el aguacate en tiras.\n3. Armar los rollos con arroz, salmón y aguacate envueltos en alga nori."
+  },
+  {
+    "nombre": "Hamburguesa Clásica",
+    "ingredientes": ["Carne de Res", "Pan de Hamburguesa", "Lechuga", "Tomate"],
+    "imagen": "https://d31npzejelj8v1.cloudfront.net/media/recipemanager/recipe/1687289278_clasica-bem.jpg",
+    "video_youtube": "https://www.youtube.com/embed/F6cM7Bbv920?si=pjkMPCEvKWEIfKQ3",
+    "tipo": "Plato Principal",
+    "descripcion": "Una hamburguesa clásica con carne jugosa, lechuga y tomate.",
+    "preparacion": "1. Formar las hamburguesas con carne de res.\n2. Cocinar en la parrilla hasta que estén hechas.\n3. Montar la hamburguesa con lechuga, tomate y pan."
+  },
+  {
+    "nombre": "Helado de Vainilla",
+    "ingredientes": ["Leche", "Nata", "Huevo", "Vainilla"],
+    "imagen": "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/BGL2O773X5EHXLNWURCUYKERV4.jpg",
+    "video_youtube": "https://www.youtube.com/embed/kFwUDz-VOhw?si=iMs4Wt8mNOTc9Zbw",
+    "tipo": "Postre",
+    "descripcion": "Helado suave y cremoso con el sabor clásico de la vainilla.",
+    "preparacion": "1. Mezclar la leche con la vainilla.\n2. Batir la nata y añadir a la mezcla.\n3. Congelar hasta que el helado esté listo para servir."
+  }
 ]
