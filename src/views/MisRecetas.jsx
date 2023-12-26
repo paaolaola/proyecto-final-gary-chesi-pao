@@ -31,7 +31,7 @@ const MisRecetas = () => {
                                     <tr key={index}>
                                         <td>{index + 1}</td>
                                         <td>
-                                            <Link to={`/home/${receta.nombre}`} onClick={() => navigate(`/receta/${receta.nombre}`)}>
+                                            <Link to={`/${receta.nombre}`} onClick={() => navigate(`/receta/${receta.nombre}`)}>
                                                 {receta.nombre}
                                             </Link>
                                         </td>
