@@ -1,124 +1,156 @@
 .detalle-receta-main {
-    display: grid;
-    min-height: 50vh;
-    padding: 1rem;
+  display: grid;
+  min-height: 50vh;
+  padding: 1rem;
 
+  grid-template-areas:
+    "proceso img"
+    "proceso desc";
+  .nombre-ayuda,
+  p {
+    text-align: center;
+  }
+  li {
+    margin-top: 1rem;
+  }
+  ol {
+    list-style: none;
+  }
+  @media (max-width: 700px) {
     grid-template-areas:
-        "proceso img"
-        "proceso desc";
-    .nombre-ayuda,
-    p {
-        text-align: center;
-    }
-    li {
-        margin-top: 1rem;
-    }
-    ol {
-        list-style: none;
-    }
-    @media (max-width: 700px) {
-        grid-template-areas:
-            "img"
-            "proceso "
-            " desc";
-        width: 100%;
-    }
+      "img"
+      "proceso "
+      " desc";
+    width: 100%;
+  }
 }
 .seccion-card {
-    text-align: justify;
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--color-tercero);
-    padding-top: 3rem;
+  text-align: justify;
+  border: 1px solid var(--color-tercero);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-tercero);
+  padding-top: 3rem;
 }
 
 .contenedor-detalle {
-    background-image: url("https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    background-size: cover;
-    background-position: 50% 90%;
-    text-align: right;
-    height: 100%;
-    padding: 0 20px;
-    padding-bottom: 2rem;
-    @media (max-width: 700px) {
-        width: 100%;
-    }
+  background-image: url("https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: 50% 90%;
+  text-align: right;
+  height: 100%;
+  padding: 0 20px;
+  padding-bottom: 2rem;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .detalle-receta-img {
-    grid-area: img;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    padding: 0.5rem;
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-tercero);
+  border-radius: 10px;
+  padding: 0.5rem;
 
-    @media (max-width: 700px) {
-        overflow: hidden;
-        iframe {
-            width: 300px;
-        }
-        padding: 2rem;
+  @media (max-width: 700px) {
+    overflow: hidden;
+    iframe {
+      width: 300px;
     }
+    padding: 2rem;
+  }
 }
 
 .receta-card-img {
-    margin: auto;
+  margin: auto;
 }
 
 .detalle-receta-desc {
-    grid-area: desc;
-    width: 100%;
+  grid-area: desc;
+  width: 100%;
 }
 
 .detalle-receta-descripcion {
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 1rem;
+  border: 1px solid var(--color-tercero);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
 }
 
 .detalle-receta-proceso {
-    grid-area: proceso;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
+  grid-area: proceso;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .detalle-receta-ingredientes {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-tercero);
+  border-radius: 10px;
+  padding: 1rem;
 
-    li {
-        text-align: start;
-    }
+  li {
+    text-align: start;
+  }
 }
 
 .detalle-receta-instrucciones {
-    border: 1px solid var(--color-tercero);
-    border-radius: 10px;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem;
-    ol {
-        text-align: start;
-    }
+  border: 1px solid var(--color-tercero);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  ol {
+    text-align: start;
+  }
+}
+
+.fav-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-add-favorites {
+  background: var(--color-sexto);
+  color: var(--color-tercero);
+  font-weight: 400;
+  border-style: none;
+  border-radius: 10px;
+  width: 160px;
+  margin: auto;
+  padding: 10px 30px;
+
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+  transition: background-color 0.3s;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.favorito {
+  background-color: var(--color-segundo);
+  color: black;
+  /* Otros estilos para resaltar el botón */
 }
