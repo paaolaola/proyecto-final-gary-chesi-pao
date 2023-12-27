@@ -133,13 +133,13 @@ const AgregarReceta = () => {
               <div className="error-message">{errors.nombre}</div>
               <input placeholder="Nombre:" type="text" id="nombre" name="nombre" value={recipe.nombre} onChange={handleChange} />
             </div>
-            {/*             <div className="form-class">
-              <div className="error-message">{errors.tipo}</div>
-              <input placeholder="Tipo:" type="text" id="tipo" name="tipo" value={recipe.tipo} onChange={handleChange} />
-            </div> */}
+
             <div className="form-class">
               <div className="error-message">{errors.tipo}</div>
               <select id="tipo" name="tipo" value={recipe.tipo} onChange={handleChange}>
+                <option value="" disabled>
+                  Elige tipo
+                </option>
                 <option value="Postres">Postres</option>
                 <option value="Plato Principal">Plato Principal</option>
                 <option value="Ensalada">Ensalada</option>
