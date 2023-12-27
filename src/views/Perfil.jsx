@@ -111,6 +111,9 @@ const Perfil = () => {
                                     </tbody>
                                 </Table>
                             )}
+                            <Link to="/nueva-receta">
+                                <button className="btn-global">Crear Receta</button>
+                            </Link>
                         </div>
                     </div>
 

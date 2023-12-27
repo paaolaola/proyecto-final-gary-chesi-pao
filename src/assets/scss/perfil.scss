@@ -1,261 +1,262 @@
 .profile-main {
-	display: grid;
-	grid-template-areas:
-		" img favorites"
-		" tus-recetas favorites";
-	align-items: center;
-	justify-content: center;
-	@media (max-width: 1024px) {
-		grid-template-areas:
-			" img"
-			"desc"
-			"favorites "
-			"tus-recetas";
-	}
+    display: grid;
+    grid-template-areas:
+        " img favorites"
+        " tus-recetas favorites";
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1024px) {
+        grid-template-areas:
+            " img"
+            "desc"
+            "favorites "
+            "tus-recetas";
+    }
 }
 .contenedor-perfil {
-	background-image: url("https://images.pexels.com/photos/19526664/pexels-photo-19526664/free-photo-of-cocinando-preparando-fotografia-de-comida-azotado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-	background-size: cover;
+    background-image: url("https://images.pexels.com/photos/19526664/pexels-photo-19526664/free-photo-of-cocinando-preparando-fotografia-de-comida-azotado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
 
-	padding: 5px 0;
-	text-align: right;
-	height: 100%;
+    padding: 5px 0;
+    text-align: right;
+    height: 100%;
 }
 .seccion-perfil {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: justify;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
-	color: var(--color-tercero);
-	margin: 20px;
-	@media (max-width: 700px) {
-		margin: 10px;
-	}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-tercero);
+    margin: 20px;
+    @media (max-width: 700px) {
+        margin: 10px;
+    }
 }
 
 .titulo-perfil {
-	text-align: center;
-	padding-top: 4rem;
-	text-transform: capitalize;
+    text-align: center;
+    padding-top: 4rem;
+    text-transform: capitalize;
 }
 .profile-img {
-	grid-area: img;
-	max-width: 300px;
-	margin: 1rem;
-	padding: 1rem;
-	@media (max-width: 700px) {
-		width: 150px;
-	}
+    grid-area: img;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    @media (max-width: 700px) {
+        width: 150px;
+    }
 }
 .profile-image {
-	width: 100px; /* Ajusta el tamaño según tus preferencias */
-	height: 100px;
-	border-radius: 50%; /* Hace que la imagen sea circular */
-	margin-right: 10px; /* Espaciado entre la imagen y la información del perfil */
+    width: 100px; /* Ajusta el tamaño según tus preferencias */
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-right: 10px; /* Espaciado entre la imagen y la información del perfil */
 }
 
 .profile-info {
-	p {
-		margin: 0;
-		padding: 0;
-	}
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .table-responsive {
-	margin: 10px;
+    margin: 10px;
 }
 .profile-img-cont {
-	text-align: center;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
-	margin: 1rem;
-	padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .profile-desc {
-	grid-area: desc;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
-	margin: 1rem;
-	padding: 1rem 2rem 3rem 2rem;
+    grid-area: desc;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem 2rem 3rem 2rem;
 }
 .btn-mod {
-	text-align: right;
+    text-align: right;
 
-	button {
-		background-color: transparent;
-		color: var(--color-tercero);
-		width: 150px;
-		padding: 0.5rem;
-		border: 2px solid var(--color-tercero);
-		border-radius: 6px;
-		cursor: pointer;
-	}
+    button {
+        background-color: transparent;
+        color: var(--color-tercero);
+        width: 150px;
+        padding: 0.5rem;
+        border: 2px solid var(--color-tercero);
+        border-radius: 6px;
+        cursor: pointer;
+    }
 }
 .btn-logout {
-	background: var(--color-segundo);
-	color: black;
-	border-style: none;
-	width: 200px;
-	margin: auto;
-	padding: 0.5rem;
-	border-radius: 10px;
-	margin: 1rem 2rem;
-	transition: all 0.3s;
-	cursor: pointer;
+    background: var(--color-segundo);
+    color: black;
+    border-style: none;
+    width: 200px;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
 
-	&:hover {
-		transform: scale(1.03);
-	}
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .profile-desc h2 {
-	margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .profile-favorites-cont {
-	display: flex;
-	margin: 2rem;
-	height: 100%;
-	width: 100%;
+    display: flex;
+    margin: 2rem;
+    height: 100%;
+    width: 100%;
 }
 
 .profile-mis-recetas {
-	border: 1px solid var(--color-tercero);
-	grid-area: tus-recetas;
-	border-radius: 10px;
-	margin: 1rem;
+    border: 1px solid var(--color-tercero);
+    grid-area: tus-recetas;
+    border-radius: 10px;
+    margin: 1rem;
+    text-align: center;
 }
 .profile-mis-recetas-cont {
-	display: flex;
-	margin: 3rem;
+    display: flex;
+    margin: 3rem;
 }
 
 .profile-main {
-	.nombre-ayuda,
-	p {
-		text-align: center;
-	}
+    .nombre-ayuda,
+    p {
+        text-align: center;
+    }
 }
 .profile-favorites {
-	margin-top: 20px;
-	grid-area: favorites;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 10px;
-	margin: 10px;
-	padding: 10px;
-	flex-wrap: wrap;
-	border: 1px solid var(--color-tercero);
-	border-radius: 10px;
+    margin-top: 20px;
+    grid-area: favorites;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-tercero);
+    border-radius: 10px;
 }
 .favorites-cont {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
-	@media (max-width: 700px) {
-		grid-template-columns: repeat(1, 1fr);
-		place-items: center;
-		margin: 10px;
-	}
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        margin: 10px;
+    }
 }
 .favorite-card {
-	border: 1px solid #ccc;
-	background-color: var(--color-sexto);
-	border-radius: 8px;
-	overflow: hidden;
-	width: 120px; /* Ajusta el ancho según tus necesidades */
-	cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: var(--color-sexto);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 120px; /* Ajusta el ancho según tus necesidades */
+    cursor: pointer;
 }
 
 .favorite-card img {
-	width: 100%;
-	height: 80px; /* Ajusta la altura según tus necesidades */
-	object-fit: cover;
-	border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 80px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
 }
 
 .favorite-card p {
-	padding: 8px;
-	margin: 0;
-	text-align: center;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
 }
 .profile-buttons {
-	display: flex;
-	gap: 10px;
-	margin-top: 20px;
-	@media (max-width: 700px) {
-		display: grid;
-		grid-template-columns: auto auto;
-		align-items: center;
-		justify-content: center;
-	}
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    @media (max-width: 700px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .profile-buttons button {
-	background: var(--color-segundo);
-	color: black;
-	border-style: none;
-	width: 120px;
-	margin: auto;
-	padding: 0.5rem;
-	border-radius: 10px;
-	margin: 1rem;
-	transition: all 0.3s;
-	cursor: pointer;
-	&:hover {
-		transform: scale(1.03);
-	}
+    background: var(--color-segundo);
+    color: black;
+    border-style: none;
+    width: 120px;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 .edit-button {
-	background-color: var(--color-tercero) !important;
-	color: white;
+    background-color: var(--color-tercero) !important;
+    color: white;
 }
 
 .save-button {
-	background-color: var(--color-tercero) !important;
-	color: white;
+    background-color: var(--color-tercero) !important;
+    color: white;
 }
 
 .cancel-button {
-	background-color: var(--color-primero) !important;
-	color: white;
+    background-color: var(--color-primero) !important;
+    color: white;
 }
 .profile-info input {
-	width: 100%;
-	padding: 8px;
-	margin-bottom: 10px;
-	font-size: 14px;
-	border: 1px solid #ddd;
-	border-radius: 4px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 /* Estilo para los textos en modo de visualización */
 .profile-info p {
-	margin-bottom: 10px;
-	font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 /* Estilo para el contenedor principal de la imagen y la información */
 .profile-img-cont {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilo para la imagen de perfil */
 .profile-image {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 2px solid #ddd;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
 }
