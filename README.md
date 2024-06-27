@@ -8,10 +8,10 @@ Incluye funcionalidades como: Filtro de búsqueda, Sorting de elementos, Validac
 
 #### Instalación:
 
-Es necesario instalar las siguientes dependencias,
-
-Los datos son almacenados desde sessionStorage. No hay bases de datos de por medio. Puedes ingresar registrandote aquí: https://recetappweb.netlify.app/registro
+Al descargar el repositorio, debes obtener las dependencias con el comando "npm install"
 
 #### Sitio web:
 
 https://recetappweb.netlify.app/
+
+Los datos son almacenados desde sessionStorage. No hay bases de datos de por medio. Puedes ingresar registrandote aquí: https://recetappweb.netlify.app/registro
